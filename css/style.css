@@ -209,6 +209,7 @@ body {
 .header-up {
 }
 .header-left {
+  position: relative;
   float: left;
   /* a.logo가 block이고 자식이 전부 absolute를 잡았을 경우... */
   /* 할수없이 width, height를 준다 */
@@ -425,6 +426,7 @@ body {
     width: 100%;
   }
   .search {
+    position: absolute;
     left: 50%;
     transform: translateX(-50%);
     top: 140px;
@@ -483,6 +485,12 @@ body {
 .sw-promotion a img {
   width: 100%;
   height: auto;
+}
+@media screen and (max-width: 1280px) {
+}
+@media screen and (max-width: 1024px) {
+}
+@media screen and (max-width: 760px) {
 }
 
 /* 쇼핑추천 */
