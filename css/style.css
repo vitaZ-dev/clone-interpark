@@ -166,6 +166,36 @@ body {
   height: 10px;
   background: url("../images/icon_linkArrow.svg") no-repeat center;
 }
+@media screen and (max-width: 1280px) {
+  .section-top {
+  }
+  .section-top > h2 {
+  }
+  .section-top > p {
+  }
+}
+@media screen and (max-width: 1024px) {
+  .section-top {
+  }
+  .section-top > h2 {
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 0;
+  }
+  .section-top > p {
+    font-size: 15px;
+    line-height: 18px;
+    margin-top: 2px;
+  }
+}
+@media screen and (max-width: 760px) {
+  .section-top {
+  }
+  .section-top > h2 {
+  }
+  .section-top > p {
+  }
+}
 
 /* 플라잉배너 */
 .fix-banner {
@@ -474,6 +504,9 @@ body {
 .promotion .inner {
   height: 345px;
 }
+.promotion .section-top {
+  display: none;
+}
 .promotion-slide {
   height: 100%;
 }
@@ -486,11 +519,32 @@ body {
   width: 100%;
   height: auto;
 }
+/**/
 @media screen and (max-width: 1280px) {
+  .promotion .inner {
+    height: 275px;
+  }
 }
 @media screen and (max-width: 1024px) {
+  .promotion .inner {
+    height: 200px;
+    border-bottom: 8px solid #f0f4f4;
+  }
+  .promotion .section-top {
+    display: block;
+    margin-bottom: 20px;
+  }
+  .promotion .sw-btn {
+    display: none;
+  }
 }
 @media screen and (max-width: 760px) {
+  .promotion .inner {
+    height: 190px;
+  }
+  .sw-promotion {
+    width: 50%;
+  }
 }
 
 /* 쇼핑추천 */

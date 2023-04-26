@@ -169,6 +169,10 @@
       <!-- 추천 이벤트 -->
       <section class="promotion">
         <div class="inner">
+          <div class="section-top">
+            <h2>오늘의 픽</h2>
+            <p>인터파크에서 할인혜택을 꼭 챙기세요.</p>
+          </div>
           <div class="promotion-slide">
             <button class="sw-btn sw-prev">이전</button>
             <button class="sw-btn sw-next">다음</button>
@@ -209,7 +213,7 @@
             <!-- Initialize Swiper -->
             <script>
               var swiper = new Swiper(".sw-promotion", {
-                slidesPerView: 2,
+                slidesPerView: 1,
                 spaceBetween: 24,
                 speed: 1000, //1s
                 loop: true,
@@ -220,6 +224,14 @@
                 navigation: {
                   nextEl: ".promotion .sw-next",
                   prevEl: ".promotion .sw-prev",
+                },
+
+                //반응형
+                breakpoints: {
+                  //760px 이상일 때 2장씩
+                  760: {
+                    slidesPerView: 2,
+                  },
                 },
               });
             </script>
