@@ -1,0 +1,1044 @@
+@charset "utf-8";
+@import url("font.css");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline-style: none;
+}
+ul {
+  list-style: none;
+}
+a {
+  color: #333;
+  text-decoration: none;
+}
+img {
+  vertical-align: middle;
+  border: 0;
+}
+html {
+  font-size: 10px;
+}
+body {
+  font-family: "Pretendard", "sans-serif";
+  color: #000;
+  font-size: 1.3rem;
+  line-height: 1;
+  letter-spacing: -0.64px;
+  word-break: keep-all;
+}
+/* 공통 클래스 */
+.inner {
+  position: relative;
+  width: 1280px;
+  width: 128rem;
+  margin: 0 auto;
+}
+.clearfix::after {
+  content: "";
+  position: relative;
+  display: block;
+  width: 100%;
+  clear: both;
+}
+/* swiper button */
+.sw-btn {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  background: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.13);
+  font-size: 0;
+  cursor: pointer;
+}
+.sw-prev {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 99;
+}
+.sw-next {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translate(50%, -50%);
+  z-index: 99;
+}
+.sw-btn::before {
+  content: "";
+  position: absolute;
+  left: calc(50% - 4px);
+  top: calc(50% - 8px);
+  display: block;
+  width: 8px;
+  height: 16px;
+  background: url("../images/slider_arrow.svg") no-repeat center;
+}
+.sw-prev::before {
+  content: "";
+  transform: scaleX(-100%);
+}
+/* // swiper button */
+
+/* section 내용 구조 */
+.section-top {
+  text-align: center;
+}
+.section-top > h2 {
+  font-size: 28px;
+  line-height: 33px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.section-top > p {
+  font-size: 18px;
+  line-height: 24px; /* 뭔가 이상한 부분 ~ 2.4px이었음 */
+  color: rgba(0, 0, 0, 0.5);
+}
+.section-top .btns {
+  margin: 25px 0;
+  /* inline-block은 html 코드의 엔터도 글자로 인식 */
+  /* 그래서 의도하지 않은 공백글자가 들어간다!!! */
+  /* 해결법 */
+  font-size: 0;
+  /* 엔터도 글자로 인식하기 때문 = 엔터를 0px로 준다 */
+}
+.section-top .btns a {
+  display: inline-block;
+  border-radius: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 0 20px;
+  line-height: 42px;
+  font-size: 14px;
+  color: #111;
+  background: #fff;
+  margin-right: 6px;
+}
+.section-top .btns a:last-child {
+  margin-right: 0;
+}
+.btns-active {
+  background: #111 !important;
+  color: #fff !important;
+}
+.section-slide {
+  position: relative;
+  margin-bottom: 20px;
+}
+.section-bottom {
+  text-align: center;
+}
+.btn-link-shop {
+  /* 만약 block 이면 width를 주고, margin: 0 auto; 지정 등 코드가 복잡 */
+  /* 이건 inline-block이므로 글자처럼 text-align: center; */
+  display: inline-block;
+  text-align: center;
+  font-size: 16px;
+  line-height: 56px;
+  padding: 0 40px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 28px;
+  font-weight: 700;
+}
+.btn-link-shop::after {
+  content: "";
+  position: relative;
+  display: inline-block;
+  margin-left: 3px;
+  width: 10px;
+  height: 10px;
+  background: url("../images/icon_linkArrow.svg") no-repeat center;
+}
+
+/* 플라잉배너 */
+.fix-banner {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 9999;
+  text-align: center;
+}
+.fix-banner a {
+  display: block;
+}
+.gotop {
+  display: inline-block;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.04);
+  background: #fff url("../images/btn_topArrow.svg") no-repeat center;
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.16);
+  font-size: 0;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+/* 기본 레이아웃 */
+.wrap {
+}
+
+/* 상단 */
+.header {
+  position: relative;
+  z-index: 999999;
+  border-bottom: 1px solid #ededed;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+.header .inner {
+  height: 160px;
+  padding-top: 30px;
+}
+.header-up {
+}
+.header-left {
+  float: left;
+  /* a.logo가 block이고 자식이 전부 absolute를 잡았을 경우... */
+  /* 할수없이 width, height를 준다 */
+  /* position: relative;
+  width: calc(118px + 455px + 20px);
+  height: 50px; */
+}
+/* .logo img {
+  width: 118px;
+  height: 32px;
+} */
+.logo {
+  display: inline-block;
+  width: 118px;
+  height: 50px;
+  background: url("../images/logo.svg") no-repeat center;
+  background-size: contain;
+}
+.search {
+  display: inline-block;
+  position: relative;
+  width: 455px;
+  height: 50px;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 25px;
+  padding: 0 15px;
+  margin-left: 20px;
+  overflow: hidden;
+}
+.search-text {
+  width: calc(100% - 25px);
+  height: 50px;
+  border: 0;
+  padding-right: 30px;
+  font-size: 16px;
+  font-weight: 400;
+}
+.search-text::placeholder {
+  color: #a2a2a2;
+  font-size: 15px;
+  font-weight: 700;
+}
+.search-btn {
+  width: 17px;
+  height: 17px;
+  border: 0;
+  background: url("../images/btn_search.svg") no-repeat center;
+  cursor: pointer;
+  /* 조건 : inline 또는 inline-block */
+  vertical-align: -3px;
+}
+.search-reset {
+  position: absolute;
+  top: calc(50% - 8px);
+  right: 50px;
+  border: 0;
+  font-size: 0;
+  cursor: pointer;
+
+  width: 16px;
+  height: 16px;
+  background: url("../images/btn_searchDelete.svg") no-repeat center;
+}
+
+.header-right {
+  float: right;
+}
+.member-list {
+  /* 중앙정렬하는 네가지 방법 */
+  margin-top: 17px;
+  /* padding-top: 17px; */
+  /* position: absolute;
+	top: 17px; */
+  /* line-height: 50px; */
+}
+.member-list > li {
+  position: relative;
+  float: left;
+  margin-right: 20px;
+}
+.member-list > li:last-child {
+  margin-right: 0;
+}
+.member-list > li > a {
+  font-size: 15px;
+  color: #111;
+  font-weight: 500;
+}
+.mypage-btn:hover .mypage {
+  display: block;
+}
+.mypage {
+  display: none;
+  position: absolute;
+  top: 25px;
+  right: 0;
+  /* background: rgba(255, 0, 0, 0.2); */
+  background: #fff;
+  padding: 20px;
+  border-radius: 13px;
+  box-shadow: 0 0 1.6rem rgba(0, 0, 0, 0.2);
+}
+.mypage-list {
+}
+.mypage-list li {
+  margin: 14px 0; /**/
+}
+.mypage-list li:first-child {
+  margin-top: 0;
+}
+.mypage-list li:last-child {
+  margin-bottom: 0;
+}
+.mypage-list li a {
+  /* inline은 줄내림이 없다! 한줄로 배치! */
+  white-space: nowrap;
+  font-size: 14px;
+}
+.mypage-list li a b {
+  font-weight: 700;
+}
+/*
+.icon-arrow {
+	/* img태그에서. 
+  /* inline요소를 세로로 위치이동하기 
+  vertical-align: 0px;
+  display: inline-block;
+  margin-left: 5px;
+}
+*/
+.icon-arrow::after {
+  content: "";
+  position: relative;
+  display: inline-block;
+  width: 8px;
+  height: 5px;
+  background: url("../images/arrow_pc.svg") no-repeat center;
+  vertical-align: 3px;
+  margin-left: 5px;
+}
+
+.header-down {
+  padding-top: 30px;
+}
+.service-list {
+  float: left;
+}
+.service-list li {
+  float: left;
+  padding-right: 23px;
+}
+.service-list li:last-child {
+  padding-right: 0;
+  margin-right: 15px;
+}
+.service-list li a {
+  font-size: 16px;
+  color: #333;
+  font-weight: 600;
+  line-height: 30px;
+}
+.service-list li a img {
+  width: 30px;
+  height: 30px;
+  margin-right: 5px;
+}
+.service-menu {
+  float: left;
+}
+.service-menu li {
+  float: left;
+}
+.service-menu li a {
+  position: relative;
+  display: inline-block; /* 얘 덕분에 패딩 적용! */
+  font-size: 16px;
+  color: #333;
+  font-weight: 600;
+  line-height: 30px;
+  padding: 0 12px;
+}
+.service-menu li a::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: calc(50% - 16px / 2);
+  display: block;
+  width: 1px;
+  height: 16px;
+  background: rgba(0, 0, 0, 0.08);
+}
+
+/* 추천이벤트 */
+.promotion {
+  padding-top: 30px;
+  padding-bottom: 90px;
+}
+.promotion .inner {
+  height: 345px;
+}
+.promotion-slide {
+  height: 100%;
+}
+.sw-promotion a {
+  display: inline-block;
+  border-radius: 13px;
+  overflow: hidden;
+}
+.sw-promotion a img {
+  width: 100%;
+  height: auto;
+}
+
+/* 쇼핑추천 */
+.shopping {
+  padding-top: 30px;
+  padding-bottom: 90px;
+}
+.shopping .section-slide {
+  height: 405px;
+}
+.sw-shopping {
+  height: 100%;
+}
+.good {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  background: #eee;
+  text-align: center;
+  /* 그림이 넘어가는 부분은 숨김 */
+  overflow: hidden;
+}
+.good > img {
+  width: 100%;
+  mix-blend-mode: multiply;
+}
+.good-info {
+  background-color: #fff;
+  text-align: left;
+  padding: 20px;
+}
+.good-info-list {
+}
+.good-info-list li {
+}
+.good-info-list li b {
+  font-size: 20px;
+  line-height: 24px;
+  color: #111;
+  font-weight: 700;
+}
+.good-info-list li b span {
+  color: #ef3e43;
+}
+.good-info-list li p {
+  margin-top: 10px;
+  font-size: 15px;
+  line-height: 18px;
+  color: #111;
+  /* 내용이 한 줄일 수도 있고 최대 2줄이다 */
+  /* 높이 값을 지정해서 레이아웃을 지킨다! */
+  height: 36px;
+
+  /* 내용이 넘치는 경우 ... 처리 = 2줄 이상 넘치는 경우. */
+  /* 2줄 말줄임 */
+  /* 1. 높이가 있어야 한다! */
+  /* 2. 넘치는 영역을 가린다. */
+  overflow: hidden;
+  /* 3. display: -webkit-box; 이어야 한다. */
+  display: -webkit-box;
+  /* 4. text-overflow: elipsis; 텍스트가 영역을 넘칠 때! */
+  text-overflow: ellipsis;
+  /* 5. 아래 코드를 입력한다. */
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+/* 투어특가 */
+.tour {
+  padding-top: 30px;
+  padding-bottom: 90px;
+}
+.tour .section-slide {
+  height: 355px;
+}
+.sw-tour {
+  height: 100%;
+}
+.tour-link {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+.tour-img {
+  position: relative;
+  width: 100%;
+  height: 245px;
+  overflow: hidden;
+}
+.tour-img img {
+  /* absolute를 영역 중앙에 배치 - 부모에 position이 있어야함!*/
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  /* 좌표, 영역 말고 내용. 즉, 보이는 부분만 이동! */
+  transform: translate(-50%, -50%);
+
+  width: 100%;
+}
+.tour-info {
+  padding: 20px;
+  background: #fff;
+}
+.tour-info-list {
+}
+.tour-info-list li {
+  position: relative;
+  margin-bottom: 3px;
+}
+.tour-cate {
+  position: absolute;
+  top: -39px;
+  display: inline-block;
+  padding: 0 10px;
+  border-radius: 3px;
+  background: #4a95ff;
+  font-size: 14px;
+  line-height: 32px;
+  color: #fff;
+  font-weight: 700;
+}
+.tour-title {
+  font-size: 15px;
+  line-height: 18px;
+  color: #4a95ff;
+  display: block;
+  /* 1줄 말줄임 ... */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.tour-place {
+}
+.tour-price {
+  color: #111;
+  font-size: 16px;
+  line-height: 24px;
+}
+.tour-price b {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+/* 티켓랭킹 */
+.ticket {
+  padding-top: 30px;
+  padding-bottom: 90px;
+}
+.ticket .section-slide {
+  height: 540px;
+}
+.ticket .section-slide .sw-btn {
+  top: 35%;
+}
+.sw-ticket {
+  height: 100%;
+}
+.ticket-link {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.ticket-img {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+
+  border-radius: 10px;
+}
+.ticket-img img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 100%;
+}
+.ticket-rank {
+  position: absolute;
+  left: 25px;
+  bottom: 30px;
+  font-size: 70px;
+  color: #fff;
+  font-weight: 700;
+  z-index: 1;
+}
+.ticket-img::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.04), rgba(0, 0, 0, 0.04)),
+    linear-gradient(180deg, transparent 68.5%, rgba(0, 0, 0, 0.6));
+}
+
+.ticket-info {
+  padding: 20px 10px;
+  background: #fff;
+}
+.ticket-info-list {
+}
+.ticket-info-list li {
+  margin-bottom: 5px;
+}
+.ticket-info-list li:first-child {
+  margin-bottom: 0;
+}
+.ticket-title {
+  color: #111;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 700;
+  /* 2줄 ... 말줄임 처리 */
+  display: -webkit-box;
+  height: 44px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.ticket-hall {
+  display: block;
+  font-size: 15px;
+  line-height: 18px;
+  color: #666;
+  /* 1줄 말줄임 처리 */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.ticket-date {
+  display: block;
+  font-size: 14px;
+  line-height: 17px;
+  color: #999;
+  /* 1줄 말줄임 처리 */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.ticket-sale {
+  display: inline-block;
+  line-height: 24px;
+  font-size: 11px;
+  padding: 0 8px;
+  color: #ef3e43;
+  border: 1px solid rgba(239, 62, 67, 0.3);
+  border-radius: 3px;
+}
+
+/* 인터파크라이브 */
+.live {
+  padding-top: 30px;
+  padding-bottom: 90px;
+}
+.live .section-top {
+  margin-bottom: 25px;
+}
+.live .section-slide {
+  height: 455px;
+}
+.sw-live {
+  height: 100%;
+}
+.live-link {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.live-img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: pink;
+}
+.live-img img {
+  /* 이미지 너비, 높이 상관없이 가운데 */
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+  height: 100%;
+}
+.live-info {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+}
+.live-info-top {
+}
+.live-info-cate {
+  display: inline-block;
+  margin-bottom: 8px;
+  padding: 0 12px;
+  border-radius: 16px;
+  background: rgba(0, 0, 0, 0.5);
+  line-height: 32px;
+  font-size: 13px;
+  color: #fff;
+}
+.live-info-title {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  /* 두줄 말줄임 출력 */
+  height: 48px;
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.live-info-main {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center;
+  color: #fff;
+}
+.live-info-date {
+  font-size: 28px;
+  line-height: 33px;
+  margin-bottom: 4px;
+}
+.live-info-time {
+  font-size: 50px;
+  line-height: 60px;
+  font-weight: 700;
+}
+.live-info-bottom {
+  position: absolute;
+  left: 0;
+  bottom: 20px;
+  width: 100%;
+  padding: 0 20px;
+}
+.live-info-thumb {
+  position: relative;
+  float: left;
+  width: 65px;
+  height: 65px;
+  border-radius: 3px;
+  overflow: hidden;
+  background: pink;
+}
+.live-info-thumb img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  height: 100%;
+}
+.live-info-desc {
+  float: right;
+  width: calc(100% - 65px - 10px);
+}
+.live-info-desc-title {
+  margin-top: 10px;
+  font-size: 15px;
+  line-height: 18px;
+  color: #fff;
+  /* 1줄 말줄임 */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.live-info-desc-price {
+  margin-top: 5px;
+  font-size: 16px;
+  color: #fff;
+}
+.live-info-desc-price em {
+  color: #ef3e43;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+  font-style: normal;
+}
+.live-info-desc-price b {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+/* 오늘의도서 */
+.books {
+  padding-top: 30px;
+  padding-bottom: 90px;
+}
+.books .section-slide {
+  height: 400px;
+}
+.sw-books {
+  height: 100%;
+}
+.books-link {
+  display: block;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.books-img {
+  position: relative;
+  width: 100%;
+  height: 335px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+.books-img img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+.books-info {
+  text-align: center;
+}
+.books-info-title {
+  margin: 8px 0;
+  font-size: 15px;
+  line-height: 18px;
+  /* 1줄 말줄임 */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.books-info-price {
+  font-size: 16px;
+}
+.books-info-price em {
+  font-size: 20px;
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* 이벤트 */
+.event {
+  padding-top: 30px;
+  padding-bottom: 90px;
+}
+.event .section-top {
+  margin-bottom: 20px;
+}
+.event .section-slide {
+  height: 350px;
+}
+.sw-events {
+  height: 100%;
+}
+.events-link {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  background: #f7f7f7;
+}
+.events-link img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  mix-blend-mode: multiply;
+}
+
+/* 하단 */
+.footer {
+}
+/* footer-menu를 flex를 사용하지 않고 정렬 ~ 메뉴가 추가될 때 마다 여백을 다시 계산하는 등 번거롭다! */
+/* 그래서 flex를 써보자 */
+.footer-menu {
+  border-top: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
+  padding: 20px 0;
+}
+.footer-menu .inner {
+}
+.footer-menu-list {
+  display: flex;
+  justify-content: space-between;
+}
+.footer-menu-list > li {
+  /* float: left;
+  margin-right: 10px; */
+  position: relative;
+}
+.footer-menu-list > li::after {
+  content: "";
+  position: absolute;
+  right: -36px;
+  top: 2px;
+  width: 1px;
+  height: 12px;
+  background: rgba(0, 0, 0, 0.3);
+}
+.footer-menu-list > li:last-child::after {
+  content: none;
+}
+/* .footer-menu-list li:last-child {
+  margin-right: 0;
+} */
+.footer-menu-list > li > a {
+  font-size: 13px;
+  line-height: 16px;
+  color: #333;
+  white-space: nowrap;
+}
+.footer-menu-list > li > a strong {
+  font-weight: 700;
+}
+.footer-menu-list > li > a i::before {
+  content: "";
+  position: relative;
+  display: inline-block;
+  width: 8px;
+  height: 6px;
+  background: url("../images/icon_arrow.svg") no-repeat center;
+  margin-left: 4px;
+  vertical-align: 2px;
+}
+.footer-menu-list > li:hover .more-list {
+  display: block;
+}
+.more-list {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 20px;
+  padding: 17px;
+  background: #fff;
+  box-shadow: 0 0 1.6rem rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+}
+.more-list li {
+  margin-bottom: 16px;
+}
+.more-list li:last-child {
+  margin-bottom: 0;
+}
+.more-list li a {
+  white-space: nowrap;
+  font-size: 13px;
+  color: #333;
+}
+
+.footer-main {
+  padding: 30px 0 55px 0;
+}
+.footer-main-left {
+  float: left;
+  width: 50%;
+  padding-right: 30px;
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+}
+.footer-main-right {
+  float: right;
+  width: 50%;
+  padding-left: 30px;
+}
+.company-name {
+  float: left;
+  font-size: 15px;
+  font-weight: 700;
+  color: #111;
+  margin-right: 10px;
+}
+.company-info {
+  float: left;
+  width: 80%;
+}
+.company-info li {
+  font-size: 12px;
+  line-height: 17px;
+  color: #666;
+  margin-bottom: 16px;
+}
+.company-info li:last-child {
+  margin-bottom: 0;
+}
+.company-info li span {
+}
+.company-info li span.f-line::after {
+  content: "";
+  position: relative;
+  display: inline-block;
+  width: 1px;
+  height: 10px;
+  background: #b2b2b2;
+  margin: 0 3px;
+  vertical-align: -1px;
+}
+.company-info li a {
+  color: #666;
+}
+.company-info li a.line {
+  color: #4a95ff;
+  text-decoration: underline;
+}
+.company-info li b {
+  color: #111;
+  font-weight: 700;
+}
+.company-info li p {
+  font-size: 11px;
+  line-height: 18px;
+  color: rgba(0, 0, 0, 0.4);
+}
+/* caniuse.com을 통해 확인한다! copy태그는 IE에선 안되더라 */
+.company-info li .copy {
+  font-size: 11px;
+  line-height: 18px;
+  color: rgba(0, 0, 0, 0.4);
+}

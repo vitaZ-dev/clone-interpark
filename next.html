@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>인터파크</title>
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- 전체 레이아웃 -->
+    <div class="wrap">
+      <!-- 상단 -->
+      <header class="header">
+        <div class="inner">
+          <div class="header-up clearfix">
+            <div class="header-left">
+              <a href="index.html" alt="인터파크" class="logo"></a>
+              <form class="search">
+                <input
+                  type="text"
+                  class="search-text"
+                  maxlength="255"
+                  placeholder="검색어를 입력해주세요."
+                />
+                <input type="button" class="search-bt" />
+                <input type="reset" class="search-reset" />
+              </form>
+            </div>
+            <div class="header-right">
+              <ul class="member-list">
+                <li><a href="#">로그인</a></li>
+                <li><a href="#">회원가입</a></li>
+                <li class="mypage-bt">
+                  <a href="#">마이페이지<i class="icon-arrow"></i></a>
+
+                  <div class="mypage">
+                    <ul class="mypage-list">
+                      <li>
+                        <a href="#"><b>투어</b> 마이페이지</a>
+                      </li>
+                      <li>
+                        <a href="#"><b>티켓</b> 마이페이지</a>
+                      </li>
+                      <li>
+                        <a href="#"><b>쇼핑</b> 마이페이지</a>
+                      </li>
+                      <li>
+                        <a href="#"><b>도서</b> 마이페이지</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="header-down clearfix">
+            <ul class="service-list clearfix">
+              <li>
+                <a href="#"
+                  ><img src="images/icon_tour.png" alt="투어" />투어</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="images/icon_ticket.png" alt="티켓" />티켓</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="images/icon_shopping.png" alt="쇼핑" />쇼핑</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="images/icon_book.png" alt="도서" />도서</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="images/icon_triple.png" alt="트리플" />트리플</a
+                >
+              </li>
+              <li>
+                <a href="#">
+                  <img src="images/icon_nol.png" alt="NOL혜택" />NOL혜택</a
+                >
+              </li>
+            </ul>
+
+            <ul class="service-menu clearfix">
+              <li><a href="#">티켓오픈</a></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <!--// 상단 -->
+      <!-- 추천 이벤트  -->
+      <section class="promotion">
+        <div class="inner">
+          <div class="promotion-slide">
+            <button class="sw-bt sw-prev">이전</button>
+            <button class="sw-bt sw-next">다음</button>
+
+            <div class="swiper sw-promotion">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <a href="#"
+                    ><img src="images/promotion1.jpg" alt="프로모션"
+                  /></a>
+                </div>
+
+                <div class="swiper-slide">
+                  <a href="#"
+                    ><img src="images/promotion2.png" alt="프로모션"
+                  /></a>
+                </div>
+
+                <div class="swiper-slide">
+                  <a href="#"
+                    ><img src="images/promotion3.jpg" alt="프로모션"
+                  /></a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#"
+                    ><img src="images/promotion4.jpg" alt="프로모션"
+                  /></a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#"
+                    ><img src="images/promotion5.jpg" alt="프로모션"
+                  /></a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#"
+                    ><img src="images/promotion6.jpg" alt="프로모션"
+                  /></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Initialize Swiper -->
+      <script>
+        var swiper = new Swiper(".sw-promotion", {
+          slidesPerView: 2,
+          spaceBetween: 24,
+          speed: 1000,
+          loop: true,
+          autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+          },
+
+          navigation: {
+            nextEl: ".promotion .sw-next",
+            prevEl: ".promotion .sw-prev",
+          },
+        });
+      </script>
+      <!--// 추천 이벤트  -->
+      <!-- 쇼핑추천 -->
+      <section class="shopping">
+        <div class="inner">
+          <div class="section-top">
+            <h2>쇼핑 추천</h2>
+            <p>할인이 쎄다! 지금, 특가 상품을 확인하세요.</p>
+            <div class="btns">
+              <a href="#" class="btns-active">쎈딜</a>
+              <a href="#">베스트</a>
+              <a href="#">오늘만특가</a>
+              <a href="#">어린이날</a>
+              <a href="#">소담상회</a>
+            </div>
+          </div>
+          <div class="section-slide">
+            <!-- Swiper 는 형식이 있다. 지키지 않으면 작동안됨 -->
+            <!-- sw-shopping 클래스는 js 로 제어하려고  -->
+            <div class="swiper sw-shopping">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <a href="#" class="good">
+                    <img src="images/good1.png" alt="제품1" />
+                    <div class="good-info">
+                      <ul class="good-info-list">
+                        <li>
+                          <b><span>5%</span> 11,950원</b>
+                        </li>
+                        <li><p>맥 MAC 립스틱</p></li>
+                      </ul>
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#" class="good">
+                    <img src="images/good2.jpg" alt="제품1" />
+                    <div class="good-info">
+                      <ul class="good-info-list">
+                        <li>
+                          <b><span>5%</span> 11,950원</b>
+                        </li>
+                        <li><p>맥 MAC 립스틱</p></li>
+                      </ul>
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#" class="good">
+                    <img src="images/good3.jpg" alt="제품1" />
+                    <div class="good-info">
+                      <ul class="good-info-list">
+                        <li>
+                          <b><span>5%</span> 11,950원</b>
+                        </li>
+                        <li><p>맥 MAC 립스틱</p></li>
+                      </ul>
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#" class="good">
+                    <img src="images/good4.jpg" alt="제품1" />
+                    <div class="good-info">
+                      <ul class="good-info-list">
+                        <li>
+                          <b><span>5%</span> 11,950원</b>
+                        </li>
+                        <li><p>맥 MAC 립스틱</p></li>
+                      </ul>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- Shopping Swiper -->
+            <script>
+              new Swiper(".sw-shopping", {
+                slidesPerView: 4,
+              });
+            </script>
+          </div>
+          <div class="section-bottom"></div>
+        </div>
+      </section>
+      <!--// 쇼핑추천 -->
+      <!-- 투어특가 -->
+      <section class="tour">
+        <div class="inner">
+          <div class="section-top">
+            <h2>투어 특가</h2>
+            <p>망설이면 품절 되는 BEST 여행 상품</p>
+            <div class="btns">
+              <a href="#">망설이면 품절</a>
+              <a href="#">패키지</a>
+              <a href="#">국내숙소</a>
+              <a href="#">해외숙소</a>
+            </div>
+          </div>
+          <div class="section-slide"></div>
+          <div class="section-bottom"></div>
+        </div>
+      </section>
+      <!--// 투어특가 -->
+      <!-- 티켓랭킹 -->
+      <section class="ticket">
+        <div class="inner">
+          <div class="section-top">
+            <h2>티켓 랭킹</h2>
+            <p>오늘 뭐볼까? 지금 HOT한 공연</p>
+            <div class="btns">
+              <a href="#">뮤지컬</a>
+              <a href="#">콘서트</a>
+              <a href="#">연극</a>
+              <a href="#">클래식/무용</a>
+              <a href="#">스포츠</a>
+              <a href="#">레저/캠핑</a>
+              <a href="#">전시/행사</a>
+              <a href="#">아동/가족</a>
+            </div>
+          </div>
+          <div class="section-slide"></div>
+          <div class="section-bottom"></div>
+        </div>
+      </section>
+      <!--// 티켓랭킹 -->
+      <!-- 인터파크 라이브 -->
+      <section class="live">
+        <div class="inner">
+          <div class="section-top"></div>
+          <div class="section-slide"></div>
+          <div class="section-bottom"></div>
+        </div>
+      </section>
+      <!--// 인터파크 라이브 -->
+      <!-- 오늘의 도서 -->
+      <section class="books">
+        <div class="inner">
+          <div class="section-top">
+            <h2>오늘의 도서</h2>
+            <p>지금 읽기 딱 좋은 책, 놓치지 마세요!</p>
+            <div class="btns">
+              <a href="#">MD's Pick</a>
+              <a href="#">베스트셀러</a>
+              <a href="#">신간추천</a>
+              <a href="#">특가할인</a>
+            </div>
+          </div>
+          <div class="section-slide"></div>
+          <div class="section-bottom"></div>
+        </div>
+      </section>
+      <!--// 오늘의 도서 -->
+      <!-- 이벤트 -->
+      <section class="event">
+        <div class="inner">
+          <div class="section-top">
+            <h2>이벤트</h2>
+            <p>인터파크에서 할인혜택을 꼭 챙기세요.</p>
+          </div>
+          <div class="section-slide"></div>
+        </div>
+      </section>
+      <!--// 이벤트 -->
+      <!-- 하단 -->
+      <footer class="footer">
+        <div class="inner"></div>
+      </footer>
+      <!--// 하단 -->
+    </div>
+  </body>
+</html>
