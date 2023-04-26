@@ -16,3 +16,7 @@ src/**/*.log
 
 # assets 폴더는 제외
 assets/
+
+next.html
+layout.html
+layout.css
