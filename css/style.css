@@ -31,9 +31,23 @@ body {
 /* 공통 클래스 */
 .inner {
   position: relative;
-  width: 1280px;
-  width: 128rem;
+  max-width: 1280px;
   margin: 0 auto;
+}
+@media screen and (max-width: 1280px) {
+  .inner {
+    max-width: 1024px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .inner {
+    max-width: 760px;
+  }
+}
+@media screen and (max-width: 760px) {
+  .inner {
+    max-width: 100%;
+  }
 }
 .clearfix::after {
   content: "";
@@ -238,8 +252,8 @@ body {
   font-weight: 700;
 }
 .search-btn {
-  width: 17px;
-  height: 17px;
+  width: 18px;
+  height: 18px;
   border: 0;
   background: url("../images/btn_search.svg") no-repeat center;
   cursor: pointer;
@@ -260,6 +274,7 @@ body {
 }
 
 .header-right {
+  position: relative;
   float: right;
 }
 .member-list {
@@ -335,6 +350,12 @@ body {
   vertical-align: 3px;
   margin-left: 5px;
 }
+.mb-mypage {
+  position: absolute;
+  right: 10px;
+  top: -5px;
+  display: none;
+}
 
 .header-down {
   padding-top: 30px;
@@ -385,6 +406,62 @@ body {
   width: 1px;
   height: 16px;
   background: rgba(0, 0, 0, 0.08);
+}
+@media screen and (max-width: 1024px) {
+  .header {
+    border-bottom: 8px solid #f0f4f4;
+  }
+  .header .inner {
+    padding-top: 15px;
+    height: 230px;
+  }
+  .logo {
+    width: 77px;
+    height: 18px;
+    margin-left: 15px;
+    vertical-align: top;
+  }
+  .header-left {
+    width: 100%;
+  }
+  .search {
+    left: 50%;
+    transform: translateX(-50%);
+    top: 140px;
+  }
+  .member-list {
+    display: none;
+  }
+  .mb-mypage {
+    display: block;
+  }
+  .header-down {
+    text-align: center;
+  }
+  .service-list {
+    display: inline-block;
+    float: none;
+    margin-top: 0;
+  }
+  .service-list li {
+    padding-right: 20px;
+  }
+  .service-list li:last-child {
+    margin-right: 0;
+  }
+  .service-list li a {
+    font-size: 12px;
+    font-weight: 400;
+  }
+  .service-list li a img {
+    display: block;
+    margin: 0 auto;
+    width: 48px;
+    height: 48px;
+  }
+  .service-menu {
+    display: none;
+  }
 }
 
 /* 추천이벤트 */
