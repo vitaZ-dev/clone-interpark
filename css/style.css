@@ -98,6 +98,10 @@ body {
 /* // swiper button */
 
 /* section 내용 구조 */
+.wrap > section {
+  padding-top: 30px;
+  padding-bottom: 90px;
+}
 .section-top {
   text-align: center;
 }
@@ -167,6 +171,8 @@ body {
   background: url("../images/icon_linkArrow.svg") no-repeat center;
 }
 @media screen and (max-width: 1280px) {
+  .wrap > section {
+  }
   .section-top {
   }
   .section-top > h2 {
@@ -175,6 +181,10 @@ body {
   }
 }
 @media screen and (max-width: 1024px) {
+  .wrap > section {
+    padding-top: 30px;
+    padding-bottom: 40px;
+  }
   .section-top {
   }
   .section-top > h2 {
@@ -189,6 +199,9 @@ body {
   }
 }
 @media screen and (max-width: 760px) {
+  .wrap > section {
+    padding-bottom: 30px;
+  }
   .section-top {
   }
   .section-top > h2 {
@@ -220,7 +233,83 @@ body {
   margin-top: 10px;
   cursor: pointer;
 }
-
+/* 퀵메뉴 */
+.quick-menu {
+  display: none;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background: #fff;
+  z-index: 99;
+}
+.quick-menu .inner {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+.quick-menu a {
+}
+@media screen and (max-width: 1024px) {
+  .quick-menu {
+    display: block;
+  }
+}
+/* 플라잉 마이페이지 */
+.fix-mypage {
+  /* display: none; */
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 9999999;
+}
+.fix-mypage-main {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+.fix-mypage-main .inner {
+  border-radius: 18px 18px 0 0;
+  background: #fff;
+  overflow: hidden;
+  padding: 30px 0;
+  text-align: center;
+}
+.fix-mypage-title {
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: 700;
+}
+.fix-mypage-list {
+  display: inline-block;
+}
+.fix-mypage-list li {
+  float: left;
+  margin-right: 40px;
+}
+.fix-mypage-list li:last-child {
+  margin-right: 0;
+}
+.fix-mypage-list li a {
+  font-size: 14px;
+  color: #666;
+}
+.fix-mypage-list li a img {
+  width: 48px;
+  /* height: 48px; */
+  display: block;
+  margin: 0 auto 8px;
+}
+/* @media screen and (max-width: 760px) {
+  .fix-mypage {
+    display: none;
+  }
+} */
 /* 기본 레이아웃 */
 .wrap {
 }
@@ -498,8 +587,8 @@ body {
 
 /* 추천이벤트 */
 .promotion {
-  padding-top: 30px;
-  padding-bottom: 90px;
+  /* padding-top: 30px;
+  padding-bottom: 90px; */
 }
 .promotion .inner {
   height: 345px;
