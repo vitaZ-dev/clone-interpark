@@ -176,6 +176,7 @@
           <div class="promotion-slide">
             <button class="sw-btn sw-prev">이전</button>
             <button class="sw-btn sw-next">다음</button>
+            <!-- promotion Swiper -->
             <div class="swiper sw-promotion">
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
@@ -210,6 +211,10 @@
                 </div>
               </div>
             </div>
+            <!-- pagination -->
+            <div class="sw-promotion-control">
+              <div class="pagination sw-promotion-pg"></div>
+            </div>
             <!-- Initialize Swiper -->
             <script>
               var swiper = new Swiper(".sw-promotion", {
@@ -225,7 +230,11 @@
                   nextEl: ".promotion .sw-next",
                   prevEl: ".promotion .sw-prev",
                 },
-
+                pagination: {
+                  //el=element=요소
+                  el: ".sw-promotion-pg",
+                  clickable: true,
+                },
                 //반응형
                 breakpoints: {
                   //760px 이상일 때 2장씩
