@@ -449,8 +449,12 @@
             <!-- shopping swiper -->
             <script>
               new Swiper(".sw-shopping", {
-                spaceBetween: 24,
-                slidesPerView: 8,
+                spaceBetween: 10,
+                slidesPerView: 5,
+                grid: {
+                  rows: 2,
+                  fill: "row",
+                },
                 navigation: {
                   nextEl: ".shopping .sw-next",
                   prevEl: ".shopping .sw-prev",

@@ -41,7 +41,10 @@ body {
 }
 @media screen and (max-width: 1024px) {
   .inner {
+    padding: 0 20px;
+    padding-bottom: 20px;
     max-width: 760px;
+    border-bottom: 8px solid #f0f4f4;
   }
 }
 @media screen and (max-width: 760px) {
@@ -94,6 +97,11 @@ body {
 .sw-prev::before {
   content: "";
   transform: scaleX(-100%);
+}
+@media screen and (max-width: 1024px) {
+  .sw-btn {
+    display: none;
+  }
 }
 /* // swiper button */
 
@@ -197,6 +205,24 @@ body {
     line-height: 18px;
     margin-top: 2px;
   }
+
+  .section-top .btns {
+    margin: 15px 0;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  .section-top .btns a {
+    padding: 0 14px;
+    line-height: 34px;
+    margin-right: 10px;
+  }
+
+  .btn-link-shop {
+    display: block;
+    font-size: 15px;
+    line-height: 48px;
+    border-radius: 3px;
+  }
 }
 @media screen and (max-width: 760px) {
   .wrap > section {
@@ -258,7 +284,7 @@ body {
 }
 /* 플라잉 마이페이지 */
 .fix-mypage {
-  /* display: none; */
+  display: none;
   position: fixed;
   left: 0;
   top: 0;
@@ -305,9 +331,9 @@ body {
   display: block;
   margin: 0 auto 8px;
 }
-/* @media screen and (max-width: 760px) {
+/* @media screen and (max-width: 1024px) {
   .fix-mypage {
-    display: none;
+    display: block;
   }
 } */
 /* 기본 레이아웃 */
@@ -529,7 +555,6 @@ body {
 }
 @media screen and (max-width: 1024px) {
   .header {
-    border-bottom: 8px solid #f0f4f4;
   }
   .header .inner {
     padding-top: 15px;
@@ -624,7 +649,6 @@ body {
 @media screen and (max-width: 1024px) {
   .promotion .inner {
     height: 300px;
-    border-bottom: 8px solid #f0f4f4;
   }
   .promotion .section-top {
     display: block;
@@ -680,11 +704,11 @@ body {
 
 /* 쇼핑추천 */
 .shopping {
-  padding-top: 30px;
-  padding-bottom: 90px;
+  /* padding-top: 30px;
+  padding-bottom: 90px; */
 }
 .shopping .section-slide {
-  height: 405px;
+  /* height: 405px; */
 }
 .sw-shopping {
   height: 100%;
@@ -718,6 +742,7 @@ body {
   line-height: 24px;
   color: #111;
   font-weight: 700;
+  white-space: nowrap;
 }
 .good-info-list li b span {
   color: #ef3e43;
@@ -743,6 +768,41 @@ body {
   /* 5. 아래 코드를 입력한다. */
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
+}
+
+@media screen and (max-width: 1280px) {
+}
+@media screen and (max-width: 1024px) {
+  .good-info {
+    padding: 10px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .good-info {
+    padding: 10px;
+  }
+  .good-info-list li b {
+    font-size: 15px;
+    line-height: 18px;
+    white-space: nowrap;
+  }
+}
+@media screen and (max-width: 760px) {
+  .good {
+    min-width: 100px;
+  }
+  .good-info {
+    padding: 5px;
+  }
+  .good-info-list li b {
+    font-size: 12px;
+    line-height: 18px;
+  }
+  .good-info-list li p {
+    font-size: 13px;
+    line-height: 16px;
+    height: 32px;
+  }
 }
 
 /* 투어특가 */
