@@ -925,7 +925,7 @@ body {
   padding-bottom: 90px;
 }
 .ticket .section-slide {
-  height: 540px;
+  /* height: 540px; */
 }
 .ticket .section-slide .sw-btn {
   top: 35%;
@@ -941,7 +941,9 @@ body {
 .ticket-img {
   position: relative;
   width: 100%;
-  height: 400px;
+  max-height: 400px;
+  height: 31.25vw;
+
   overflow: hidden;
 
   border-radius: 10px;
@@ -950,7 +952,7 @@ body {
   position: absolute;
   left: 50%;
   top: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%) scale(1.2);
 
   width: 100%;
 }
@@ -1027,6 +1029,60 @@ body {
   color: #ef3e43;
   border: 1px solid rgba(239, 62, 67, 0.3);
   border-radius: 3px;
+}
+@media screen and (max-width: 1280) {
+  .ticket-img img {
+    transform: translate(-50%, -50%) scale(1.1);
+  }
+}
+@media screen and (max-width: 1024px) {
+  /*760px 가 아니라 1024px 아닐까*/
+  .ticket .section-slide {
+    /* width: 130%; */
+    /* 원래 여기 있던 130%를 sw-ticket으로 넣어 바꿔보았다 */
+    overflow: hidden;
+  }
+  .ticket-img img {
+    transform: translate(-50%, -50%) scale(1.4);
+  }
+  /* swiper의 기본 클래스는 안 건드리는게 좋다
+	.sw-ticket .swiper-slide {
+    min-width: 150px;
+  } 
+	*/
+  .sw-ticket {
+    width: 130%;
+  }
+  .ticket-rank {
+    left: 12px;
+    font-size: 38px;
+    line-height: 45px;
+  }
+  .ticket-info {
+    padding: 10px 5px;
+  }
+  .ticket-title {
+    font-size: 15px;
+    line-height: 18px;
+    height: 36px;
+    font-weight: 400;
+  }
+  .ticket-title b {
+  }
+  .ticket-hall {
+    font-size: 13px;
+    line-height: 16px;
+    margin: 5px 0;
+  }
+  .ticket-date {
+    font-size: 12px;
+    line-height: 14px;
+  }
+  .ticket-sale {
+    font-size: 10px;
+    line-height: 18px;
+    padding: 0 5px;
+  }
 }
 
 /* 인터파크라이브 */
