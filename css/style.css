@@ -1040,7 +1040,7 @@ body {
   .ticket .section-slide {
     /* width: 130%; */
     /* 원래 여기 있던 130%를 sw-ticket으로 넣어 바꿔보았다 */
-    overflow: hidden;
+    /* overflow: hidden; */
   }
   .ticket-img img {
     transform: translate(-50%, -50%) scale(1.4);
