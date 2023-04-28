@@ -53,9 +53,9 @@ body {
   }
 }
 .clearfix::after {
-  content: "";
-  position: relative;
   display: block;
+  position: relative;
+  content: "";
   width: 100%;
   clear: both;
 }
@@ -72,24 +72,24 @@ body {
 }
 .sw-prev {
   position: absolute;
-  left: 0;
   top: 50%;
+  left: 0;
   transform: translate(-50%, -50%);
   z-index: 99;
 }
 .sw-next {
   position: absolute;
-  right: 0;
   top: 50%;
+  right: 0;
   transform: translate(50%, -50%);
   z-index: 99;
 }
 .sw-btn::before {
-  content: "";
-  position: absolute;
-  left: calc(50% - 4px);
-  top: calc(50% - 8px);
   display: block;
+  position: absolute;
+  top: calc(50% - 8px);
+  left: calc(50% - 4px);
+  content: "";
   width: 8px;
   height: 16px;
   background: url("../images/slider_arrow.svg") no-repeat center;
@@ -170,9 +170,9 @@ body {
   font-weight: 700;
 }
 .btn-link-shop::after {
-  content: "";
-  position: relative;
   display: inline-block;
+  position: relative;
+  content: "";
   margin-left: 3px;
   width: 10px;
   height: 10px;
@@ -263,8 +263,8 @@ body {
 .quick-menu {
   display: none;
   position: fixed;
-  left: 0;
   bottom: 0;
+  left: 0;
   width: 100%;
   background: #fff;
   z-index: 99;
@@ -286,8 +286,8 @@ body {
 .fix-mypage {
   display: none;
   position: fixed;
-  left: 0;
   top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.6);
@@ -295,8 +295,8 @@ body {
 }
 .fix-mypage-main {
   position: absolute;
-  left: 0;
   bottom: 0;
+  left: 0;
   width: 100%;
 }
 .fix-mypage-main .inner {
@@ -326,9 +326,9 @@ body {
   color: #666;
 }
 .fix-mypage-list li a img {
-  width: 48px;
   /* height: 48px; */
   display: block;
+  width: 48px;
   margin: 0 auto 8px;
 }
 /* @media screen and (max-width: 1024px) {
@@ -487,9 +487,9 @@ body {
 }
 */
 .icon-arrow::after {
-  content: "";
-  position: relative;
   display: inline-block;
+  position: relative;
+  content: "";
   width: 8px;
   height: 5px;
   background: url("../images/arrow_pc.svg") no-repeat center;
@@ -497,10 +497,10 @@ body {
   margin-left: 5px;
 }
 .mb-mypage {
-  position: absolute;
-  right: 10px;
-  top: -5px;
   display: none;
+  position: absolute;
+  top: -5px;
+  right: 10px;
 }
 
 .header-down {
@@ -535,8 +535,8 @@ body {
   float: left;
 }
 .service-menu li a {
-  position: relative;
   display: inline-block; /* 얘 덕분에 패딩 적용! */
+  position: relative;
   font-size: 16px;
   color: #333;
   font-weight: 600;
@@ -544,11 +544,11 @@ body {
   padding: 0 12px;
 }
 .service-menu li a::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: calc(50% - 16px / 2);
   display: block;
+  position: absolute;
+  top: calc(50% - 16px / 2);
+  left: 0;
+  content: "";
   width: 1px;
   height: 16px;
   background: rgba(0, 0, 0, 0.08);
@@ -571,9 +571,9 @@ body {
   }
   .search {
     position: absolute;
+    top: 140px;
     left: 50%;
     transform: translateX(-50%);
-    top: 140px;
   }
   .member-list {
     display: none;
@@ -634,8 +634,8 @@ body {
   height: auto;
 }
 .sw-promotion-control {
-  position: relative;
   display: none;
+  position: relative;
   text-align: center;
 }
 .sw-promotion-pg {
@@ -748,6 +748,8 @@ body {
   color: #ef3e43;
 }
 .good-info-list li p {
+  /* 3. display: -webkit-box; 이어야 한다. */
+  display: -webkit-box;
   margin-top: 10px;
   font-size: 15px;
   line-height: 18px;
@@ -761,8 +763,6 @@ body {
   /* 1. 높이가 있어야 한다! */
   /* 2. 넘치는 영역을 가린다. */
   overflow: hidden;
-  /* 3. display: -webkit-box; 이어야 한다. */
-  display: -webkit-box;
   /* 4. text-overflow: elipsis; 텍스트가 영역을 넘칠 때! */
   text-overflow: ellipsis;
   /* 5. 아래 코드를 입력한다. */
@@ -838,8 +838,8 @@ body {
 .tour-img img {
   /* absolute를 영역 중앙에 배치 - 부모에 position이 있어야함!*/
   position: absolute;
-  left: 50%;
   top: 50%;
+  left: 50%;
   /* 좌표, 영역 말고 내용. 즉, 보이는 부분만 이동! */
   transform: translate(-50%, -50%) scale(1.5); /**/
 
@@ -858,9 +858,9 @@ body {
   margin-bottom: 3px;
 }
 .tour-cate {
+  display: inline-block;
   position: absolute;
   top: -39px;
-  display: inline-block;
   padding: 0 10px;
   border-radius: 3px;
   background: #4a95ff;
@@ -870,10 +870,10 @@ body {
   font-weight: 700;
 }
 .tour-title {
+  display: block;
   font-size: 15px;
   line-height: 18px;
   color: #4a95ff;
-  display: block;
   /* 1줄 말줄임 ... */
   overflow: hidden;
   text-overflow: ellipsis;
@@ -950,26 +950,26 @@ body {
 }
 .ticket-img img {
   position: absolute;
-  left: 50%;
   top: 50%;
+  left: 50%;
   transform: translate(-50%, -50%) scale(1.2);
 
   width: 100%;
 }
 .ticket-rank {
   position: absolute;
-  left: 25px;
   bottom: 30px;
+  left: 25px;
   font-size: 70px;
   color: #fff;
   font-weight: 700;
   z-index: 1;
 }
 .ticket-img::after {
-  content: "";
   position: absolute;
-  left: 0;
   top: 0;
+  left: 0;
+  content: "";
   width: 100%;
   height: 100%;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.04), rgba(0, 0, 0, 0.04)),
@@ -989,12 +989,12 @@ body {
   margin-bottom: 0;
 }
 .ticket-title {
+  /* 2줄 ... 말줄임 처리 */
+  display: -webkit-box;
   color: #111;
   font-size: 18px;
   line-height: 22px;
   font-weight: 700;
-  /* 2줄 ... 말줄임 처리 */
-  display: -webkit-box;
   height: 44px;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -1100,8 +1100,8 @@ body {
   height: 100%;
 }
 .live-link {
-  position: relative;
   display: block;
+  position: relative;
   width: 100%;
   height: 100%;
   border-radius: 10px;
@@ -1116,16 +1116,16 @@ body {
 .live-img img {
   /* 이미지 너비, 높이 상관없이 가운데 */
   position: absolute;
-  left: 50%;
   top: 50%;
-  transform: translate(-50%, -50%);
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1.2);
 
   height: 100%;
 }
 .live-info {
   position: absolute;
-  left: 0;
   top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.5);
@@ -1144,13 +1144,13 @@ body {
   color: #fff;
 }
 .live-info-title {
+  display: -webkit-box;
   color: #fff;
   font-size: 20px;
   font-weight: 700;
   line-height: 24px;
   /* 두줄 말줄임 출력 */
   height: 48px;
-  display: -webkit-box;
   overflow: hidden;
   text-overflow: ellipsis;
   -webkit-line-clamp: 2;
@@ -1158,8 +1158,8 @@ body {
 }
 .live-info-main {
   position: absolute;
-  left: 50%;
   top: 50%;
+  left: 50%;
   transform: translate(-50%, -50%);
   width: 100%;
   text-align: center;
@@ -1177,8 +1177,8 @@ body {
 }
 .live-info-bottom {
   position: absolute;
-  left: 0;
   bottom: 20px;
+  left: 0;
   width: 100%;
   padding: 0 20px;
 }
@@ -1193,8 +1193,8 @@ body {
 }
 .live-info-thumb img {
   position: absolute;
-  left: 50%;
   top: 50%;
+  left: 50%;
   transform: translate(-50%, -50%);
   height: 100%;
 }
@@ -1229,6 +1229,86 @@ body {
   line-height: 24px;
   font-weight: 700;
 }
+@media screen and (max-width: 1024px) {
+  .live .section-slide {
+    height: 285px;
+  }
+  .live-info {
+    padding: 12px;
+  }
+  .live-info-cate {
+    font-size: 10px;
+    line-height: 20px;
+    border-radius: 10px;
+    padding: 0 7px;
+  }
+  .live-info-title {
+    font-size: 14px;
+    line-height: 17px;
+    height: 34px;
+  }
+  .live-info-date {
+    font-size: 18px;
+    line-height: 21px;
+    white-space: nowrap;
+  }
+  .live-info-time {
+    font-size: 32px;
+    line-height: 38px;
+  }
+  .live-info-thumb {
+    width: 40px;
+    height: 40px;
+  }
+  .live-info-desc {
+    float: right;
+    width: calc(100% - 40px - 10px);
+  }
+  .live-info-desc-title {
+    font-size: 13px;
+    margin-top: 5px;
+  }
+  .live-info-desc-price {
+    font-size: 13px;
+    white-space: nowrap;
+    margin-top: -5px;
+  }
+  .live-info-desc-price em {
+    font-size: 13px;
+  }
+  .live-info-desc-price b {
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 760px) {
+  .live .section-slide {
+    height: 230px;
+  }
+  .live-info-title {
+    font-size: 14px;
+    line-height: 17px;
+    height: 34px;
+  }
+  .live-info-date {
+    font-size: 13px;
+    line-height: 16px;
+  }
+  .live-info-time {
+    font-size: 24px;
+    line-height: 28px;
+  }
+  .live-info-bottom {
+    padding: 0 10px;
+  }
+  /* 화면이 좁을 때 이미지 숨김 */
+  .live-info-thumb {
+    display: none;
+  }
+  .live-info-desc {
+    float: left;
+    width: 100%;
+  }
+}
 
 /* 오늘의도서 */
 .books {
@@ -1256,8 +1336,8 @@ body {
 }
 .books-img img {
   position: absolute;
-  left: 50%;
   top: 50%;
+  left: 50%;
   transform: translate(-50%, -50%);
   width: 100%;
 }
@@ -1297,8 +1377,8 @@ body {
   height: 100%;
 }
 .events-link {
-  position: relative;
   display: block;
+  position: relative;
   width: 100%;
   height: 100%;
   overflow: hidden;
@@ -1308,8 +1388,8 @@ body {
 }
 .events-link img {
   position: absolute;
-  left: 50%;
   top: 50%;
+  left: 50%;
   transform: translate(-50%, -50%);
   width: 100%;
   mix-blend-mode: multiply;
@@ -1337,10 +1417,10 @@ body {
   position: relative;
 }
 .footer-menu-list > li::after {
-  content: "";
   position: absolute;
-  right: -36px;
   top: 2px;
+  right: -36px;
+  content: "";
   width: 1px;
   height: 12px;
   background: rgba(0, 0, 0, 0.3);
@@ -1361,9 +1441,9 @@ body {
   font-weight: 700;
 }
 .footer-menu-list > li > a i::before {
-  content: "";
-  position: relative;
   display: inline-block;
+  position: relative;
+  content: "";
   width: 8px;
   height: 6px;
   background: url("../images/icon_arrow.svg") no-repeat center;
@@ -1376,8 +1456,8 @@ body {
 .more-list {
   display: none;
   position: absolute;
-  right: 0;
   top: 20px;
+  right: 0;
   padding: 17px;
   background: #fff;
   box-shadow: 0 0 1.6rem rgba(0, 0, 0, 0.2);
@@ -1432,9 +1512,9 @@ body {
 .company-info li span {
 }
 .company-info li span.f-line::after {
-  content: "";
-  position: relative;
   display: inline-block;
+  position: relative;
+  content: "";
   width: 1px;
   height: 10px;
   background: #b2b2b2;
