@@ -191,7 +191,7 @@ body {
 @media screen and (max-width: 1024px) {
   .wrap > section {
     padding-top: 30px;
-    padding-bottom: 40px;
+    padding-bottom: 0px;
   }
   .section-top {
   }
@@ -226,7 +226,6 @@ body {
 }
 @media screen and (max-width: 760px) {
   .wrap > section {
-    padding-bottom: 30px;
   }
   .section-top {
   }
@@ -274,6 +273,9 @@ body {
   justify-content: space-around;
   align-items: center;
   border-top: 1px solid rgba(0, 0, 0, 0.1);
+  /* 개인적인 추가 */
+  padding: 0;
+  border-bottom: 0;
 }
 .quick-menu a {
 }
@@ -808,8 +810,8 @@ body {
 
 /* 투어특가 */
 .tour {
-  padding-top: 30px;
-  padding-bottom: 90px;
+  /* padding-top: 30px;
+  padding-bottom: 90px; */
 }
 .tour .section-slide {
   /* height: 355px; */
@@ -922,8 +924,8 @@ body {
 }
 /* 티켓랭킹 */
 .ticket {
-  padding-top: 30px;
-  padding-bottom: 90px;
+  /* padding-top: 30px;
+  padding-bottom: 90px; */
 }
 .ticket .section-slide {
   /* height: 540px; */
@@ -1088,8 +1090,8 @@ body {
 
 /* 인터파크라이브 */
 .live {
-  padding-top: 30px;
-  padding-bottom: 90px;
+  /* padding-top: 30px;
+  padding-bottom: 90px; */
 }
 .live .section-top {
   margin-bottom: 25px;
@@ -1316,8 +1318,8 @@ body {
 
 /* 오늘의도서 */
 .books {
-  padding-top: 30px;
-  padding-bottom: 90px;
+  /* padding-top: 30px;
+  padding-bottom: 90px; */
 }
 .books .section-slide {
   /* height: 400px; */
@@ -1405,8 +1407,8 @@ body {
 
 /* 이벤트 */
 .event {
-  padding-top: 30px;
-  padding-bottom: 90px;
+  /* padding-top: 30px;
+  padding-bottom: 90px; */
 }
 .event .section-top {
   margin-bottom: 20px;
