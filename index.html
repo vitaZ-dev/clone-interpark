@@ -937,6 +937,10 @@
             </div>
             <script>
               new Swiper(".sw-ticket", {
+                navigation: {
+                  nextEl: ".ticket .sw-next",
+                  prevEl: ".ticket .sw-prev",
+                },
                 slidesPerView: "auto", //5 대신 auto
                 spaceBetween: 10,
                 breakpoints: {
@@ -1250,6 +1254,10 @@
             </div>
             <script>
               new Swiper(".sw-live", {
+                navigation: {
+                  nextEl: ".live .sw-next",
+                  prevEl: ".live .sw-prev",
+                },
                 slidesPerView: 4,
                 spaceBetween: 10,
                 breakpoints: {
@@ -1347,13 +1355,96 @@
                     </div>
                   </a>
                 </div>
+                <!-- 임시 -->
+                <div class="swiper-slide">
+                  <a href="#" class="books-link">
+                    <div class="books-img">
+                      <img src="./images/book1.jpg" alt="book1" />
+                    </div>
+                    <div class="books-info">
+                      <p class="books-info-title">New 대한민국 청약지도</p>
+                      <p class="books-info-price"><em>18,000</em>원</p>
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#" class="books-link">
+                    <div class="books-img">
+                      <img src="./images/book2.jpg" alt="book2" />
+                    </div>
+                    <div class="books-info">
+                      <p class="books-info-title">고래</p>
+                      <p class="books-info-price"><em>13,500</em>원</p>
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#" class="books-link">
+                    <div class="books-img">
+                      <img src="./images/book3.jpg" alt="book3" />
+                    </div>
+                    <div class="books-info">
+                      <p class="books-info-title">굿바이 코드네임</p>
+                      <p class="books-info-price"><em>13,500</em>원</p>
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#" class="books-link">
+                    <div class="books-img">
+                      <img src="./images/book4.jpg" alt="book4" />
+                    </div>
+                    <div class="books-info">
+                      <p class="books-info-title">New 대한민국 청약지도</p>
+                      <p class="books-info-price"><em>18,000</em>원</p>
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#" class="books-link">
+                    <div class="books-img">
+                      <img src="./images/book5.jpg" alt="book5" />
+                    </div>
+                    <div class="books-info">
+                      <p class="books-info-title">New 대한민국 청약지도</p>
+                      <p class="books-info-price"><em>18,000</em>원</p>
+                    </div>
+                  </a>
+                </div>
+                <!-- //임시 -->
               </div>
             </div>
           </div>
           <script>
             new Swiper(".sw-books", {
-              slidesPerView: 5,
-              spaceBetween: 28,
+              navigation: {
+                nextEl: ".books .sw-next",
+                prevEl: ".books .sw-prev",
+              },
+              slidesPerView: 3,
+              spaceBetween: 19,
+              grid: {
+                rows: 4,
+                fill: "row",
+              },
+              breakpoints: {
+                1024: {
+                  slidesPerView: 3,
+                  slidesPerGroup: 3,
+                  spaceBetween: 30,
+                  grid: {
+                    rows: 1,
+                  },
+                },
+                1280: {
+                  slidesPerView: 5,
+                  slidesPerGroup: 5,
+                  spaceBetween: 27,
+                  grid: {
+                    rows: 1,
+                  },
+                },
+              },
             });
           </script>
           <div class="section-bottom">
@@ -1396,12 +1487,38 @@
                     <img src="./images/banner4.jpg" alt="이벤트4" />
                   </a>
                 </div>
+                <!-- 임시 -->
+                <div class="swiper-slide">
+                  <a href="#" class="events-link">
+                    <img src="./images/banner1.jpg" alt="이벤트1" />
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#" class="events-link">
+                    <img src="./images/banner2.jpg" alt="이벤트2" />
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#" class="events-link">
+                    <img src="./images/banner3.jpg" alt="이벤트3" />
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#" class="events-link">
+                    <img src="./images/banner4.jpg" alt="이벤트4" />
+                  </a>
+                </div>
+                <!-- //임시 -->
               </div>
             </div>
             <script>
               new Swiper(".sw-events", {
                 slidesPerView: 4,
                 spaceBetween: 27,
+                navigation: {
+                  nextEl: ".event .sw-next",
+                  prevEl: ".event .sw-prev",
+                },
               });
             </script>
             <!-- event Swiper -->

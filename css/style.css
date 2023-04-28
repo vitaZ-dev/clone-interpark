@@ -555,6 +555,7 @@ body {
 }
 @media screen and (max-width: 1024px) {
   .header {
+    border-bottom: 0;
   }
   .header .inner {
     padding-top: 15px;
@@ -1233,6 +1234,9 @@ body {
   .live .section-slide {
     height: 285px;
   }
+  .live .section-slide .sw-btn {
+    top: 50%; /**/
+  }
   .live-info {
     padding: 12px;
   }
@@ -1316,7 +1320,10 @@ body {
   padding-bottom: 90px;
 }
 .books .section-slide {
-  height: 400px;
+  /* height: 400px; */
+}
+.books .swiper-slide .sw-btn {
+  top: 41%;
 }
 .sw-books {
   height: 100%;
@@ -1360,6 +1367,40 @@ body {
   font-size: 20px;
   font-weight: 700;
   font-style: normal;
+}
+@media screen and (max-width: 1280px) {
+  .books .section-slide .sw-btn {
+    top: 44%;
+  }
+  .books-img {
+    height: 457px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .books-img {
+    height: 322px;
+  }
+  .books-info-title {
+    font-size: 13px;
+    line-height: 15px;
+    white-space: nowrap;
+    margin: 4px 0;
+  }
+  .books-info-price {
+    font-size: 14px;
+  }
+  .books-info-price em {
+    font-size: 14px;
+  }
+  /* 개인적으로 추가한거 */
+  .books-img img {
+    transform: translate(-50%, -50%) scale(1.01);
+  }
+}
+@media screen and (max-width: 760px) {
+  .books-img {
+    height: 41.66vw;
+  }
 }
 
 /* 이벤트 */
