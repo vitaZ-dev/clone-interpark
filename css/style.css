@@ -1589,3 +1589,99 @@ body {
   line-height: 18px;
   color: rgba(0, 0, 0, 0.4);
 }
+.footer-mobile {
+  display: none;
+}
+.footer-mobile .inner {
+  background: #fafafa;
+  padding: 30px 0;
+  text-align: center;
+}
+.footer-mobile-menu {
+}
+.footer-mobile-menu a,
+.footer-mobile-info a {
+  position: relative;
+  display: inline-block;
+  padding: 0 8px;
+  font-size: 11px;
+  color: #333;
+  margin-bottom: 6px;
+}
+.footer-mobile-menu a strong,
+.footer-mobile-info a strong {
+  font-weight: 700;
+}
+.a-line::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: inline-block;
+  width: 1px;
+  height: 14px;
+  background: #afafaf;
+}
+.a-more::after {
+  content: "";
+  position: absolute;
+  right: -3px;
+  top: 1px;
+  width: 10px;
+  height: 10px;
+  background: url("/images/footer_arrow.svg") no-repeat center;
+}
+.footer-mobile-info {
+  margin: 25px 0;
+}
+.footer-mobile-info .a-line::before {
+  content: "";
+  position: absolute;
+  right: -8px;
+  top: 0;
+  display: inline-block;
+  width: 1px;
+  height: 14px;
+  background: #afafaf;
+}
+.footer-mobile-info a:first-child {
+  margin-right: 20px;
+}
+.footer-mobile-desc {
+  position: relative;
+  display: block;
+  padding: 0 15%;
+
+  font-size: 10px;
+  line-height: 14px;
+  color: #b2b2b2;
+  /* 줄내림 시 단어는 잘라서 내리지 말아라. */
+  word-break: keep-all;
+  margin-bottom: 85px;
+}
+/* 개인적인 추가 */
+@media screen and (max-width: 1280px) {
+  .footer-menu-list > li::after {
+    position: absolute;
+    top: 2px;
+    right: -18px;
+    content: "";
+    width: 1px;
+    height: 12px;
+    background: rgba(0, 0, 0, 0.3);
+  }
+}
+/* //개인적인 추가 */
+@media screen and (max-width: 1024px) {
+  .footer-menu {
+    display: none;
+  }
+  .footer-main {
+    display: none;
+  }
+  .footer-mobile {
+    display: block;
+  }
+}
+@media screen and (max-width: 760px) {
+}
