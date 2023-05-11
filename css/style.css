@@ -77,6 +77,9 @@ body {
   transform: translate(-50%, -50%);
   z-index: 99;
 }
+.sw-btn.swiper-button-disabled {
+  display: none;
+}
 .sw-next {
   position: absolute;
   top: 50%;
@@ -358,16 +361,7 @@ body {
 .header-left {
   position: relative;
   float: left;
-  /* a.logo가 block이고 자식이 전부 absolute를 잡았을 경우... */
-  /* 할수없이 width, height를 준다 */
-  /* position: relative;
-  width: calc(118px + 455px + 20px);
-  height: 50px; */
 }
-/* .logo img {
-  width: 118px;
-  height: 32px;
-} */
 .logo {
   display: inline-block;
   width: 118px;
@@ -446,11 +440,16 @@ body {
   color: #111;
   font-weight: 500;
 }
+.mypage-btn {
+  padding-bottom: 10px;
+}
 .mypage-btn:hover .mypage {
-  display: block;
+  opacity: 1;
+  visibility: visible;
 }
 .mypage {
-  display: none;
+  display: block;
+  visibility: hidden;
   position: absolute;
   top: 25px;
   right: 0;
@@ -459,6 +458,15 @@ body {
   padding: 20px;
   border-radius: 13px;
   box-shadow: 0 0 1.6rem rgba(0, 0, 0, 0.2);
+
+  opacity: 0;
+  transition-property: opacity, visibility;
+  transition-duration: 0.5s, 0.5s;
+  transition-delay: 0s, 0s;
+  transition-timing-function: ease-in, ease-in;
+  transition: opacity 0.5s 0s ease-in, visibility 0.5s 0s ease-in;
+  transition: all 0.5s 0s ease-in;
+  transition: all 0.05s;
 }
 .mypage-list {
 }
@@ -1510,6 +1518,7 @@ body {
   background: #fff;
   box-shadow: 0 0 1.6rem rgba(0, 0, 0, 0.2);
   border-radius: 8px;
+  z-index: 9;
 }
 .more-list li {
   margin-bottom: 16px;
