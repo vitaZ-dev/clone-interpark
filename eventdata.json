@@ -1,0 +1,43 @@
+{
+  "event_total": 8,
+  "event_1": {
+    "link": "#event",
+    "pic": "banner1.jpg",
+    "alt": "event1"
+  },
+  "event_2": {
+    "link": "#event",
+    "pic": "banner2.jpg",
+    "alt": "event2"
+  },
+  "event_3": {
+    "link": "#event",
+    "pic": "banner3.jpg",
+    "alt": "event3"
+  },
+  "event_4": {
+    "link": "#event",
+    "pic": "banner4.jpg",
+    "alt": "event4"
+  },
+  "event_5": {
+    "link": "#event",
+    "pic": "banner1.jpg",
+    "alt": "event1"
+  },
+  "event_6": {
+    "link": "#event",
+    "pic": "banner2.jpg",
+    "alt": "event2"
+  },
+  "event_7": {
+    "link": "#event",
+    "pic": "banner3.jpg",
+    "alt": "event3"
+  },
+  "event_8": {
+    "link": "#event",
+    "pic": "banner4.jpg",
+    "alt": "event4"
+  }
+}
