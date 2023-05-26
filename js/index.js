@@ -43,7 +43,7 @@ window.onload = function () {
       makePromotionSlide();
     }
   };
-  xhttp.open("GET", "../json/prodata.json");
+  xhttp.open("GET", "json/prodata.json");
   xhttp.send();
 
   function makePromotionSlide() {
@@ -103,7 +103,7 @@ window.onload = function () {
       makeEventSlide();
     }
   };
-  eventXhttp.open("GET", "../json/eventdata.json");
+  eventXhttp.open("GET", "json/eventdata.json");
   eventXhttp.send();
   function makeEventSlide() {
     let swEventHtml = ``;
