@@ -1,0 +1,192 @@
+{
+  "books": [
+    {
+      "catename": "MD's Pick",
+      "list": [
+        {
+          "link": "#books",
+          "img": "bookpick1.jpg",
+          "alt": "pick",
+          "title": "문해력 잡는 스터디매거진 국어킹 1년(50회) 정기구독",
+          "price": "141,750"
+        },
+        {
+          "link": "#books",
+          "img": "bookpick2.jpg",
+          "alt": "pick",
+          "title": "스트레이키즈 앨범 정규 3집 파이브 스타 5 STAR 일반반 [3종세트]",
+          "price": "53,400"
+        },
+        {
+          "link": "#books",
+          "img": "bookpick3.jpg",
+          "alt": "pick",
+          "title": "앳스타일 6월호 - 표지 불타는 트롯맨 / 부록 없음",
+          "price": "5,310"
+        },
+        {
+          "link": "#books",
+          "img": "bookpick4.jpg",
+          "alt": "pick",
+          "title": "스즈메의 문단속 1년 후 나에게: Q & A a day 365 [양장]",
+          "price": "17,820"
+        },
+        {
+          "link": "#books",
+          "img": "bookpick5.jpg",
+          "alt": "pick",
+          "title": "Go Go 카카오프렌즈 28: 태국",
+          "price": "13,320"
+        },
+        {
+          "link": "#books",
+          "img": "bookpick6.jpg",
+          "alt": "pick",
+          "title": "눈부신 안부",
+          "price": "14,400"
+        }
+      ]
+    },
+    {
+      "catename": "베스트셀러",
+      "list": [
+        {
+          "link": "#books",
+          "img": "bookbest1.jpg",
+          "alt": "bookbest",
+          "title": "세이노의 가르침",
+          "price": "6,480"
+        },
+        {
+          "link": "#books",
+          "img": "bookbest2.jpg",
+          "alt": "bookbest",
+          "title": "모든 삶은 흐른다",
+          "price": "15,120"
+        },
+        {
+          "link": "#books",
+          "img": "bookbest3.jpg",
+          "alt": "bookbest",
+          "title": "돈의 속성(300쇄 리커버에디션)",
+          "price": "16,020"
+        },
+        {
+          "link": "#books",
+          "img": "bookbest4.jpg",
+          "alt": "bookbest",
+          "title": "사장학개론",
+          "price": "22,500"
+        },
+        {
+          "link": "#books",
+          "img": "bookbest5.jpg",
+          "alt": "bookbest",
+          "title": "별일은 없고요?",
+          "price": "13,320"
+        },
+        {
+          "link": "#books",
+          "img": "bookbest6.jpg",
+          "alt": "bookbest",
+          "title": "유연함의 힘",
+          "price": "19,800"
+        }
+      ]
+    },
+    {
+      "catename": "신간추천",
+      "list": [
+        {
+          "link": "#books",
+          "img": "booknew1.jpg",
+          "alt": "booknew",
+          "title": "하하 자매 떡집",
+          "price": "6,480"
+        },
+        {
+          "link": "#books",
+          "img": "booknew2.jpg",
+          "alt": "booknew",
+          "title": "딸아, 돈 공부 절대 미루지 마라",
+          "price": "15,120"
+        },
+        {
+          "link": "#books",
+          "img": "booknew3.jpg",
+          "alt": "booknew",
+          "title": "태양 왕 수바: 수박의 전설",
+          "price": "16,020"
+        },
+        {
+          "link": "#books",
+          "img": "booknew4.jpg",
+          "alt": "booknew",
+          "title": "별일은 없고요?",
+          "price": "22,500"
+        },
+        {
+          "link": "#books",
+          "img": "booknew5.jpg",
+          "alt": "booknew",
+          "title": "유연함의 힘",
+          "price": "13,320"
+        },
+        {
+          "link": "#books",
+          "img": "booknew6.jpg",
+          "alt": "booknew",
+          "title": "형사 박미옥",
+          "price": "19,800"
+        }
+      ]
+    },
+    {
+      "catename": "특가할인",
+      "list": [
+        {
+          "link": "#books",
+          "img": "bookspe1.jpg",
+          "alt": "bookspe",
+          "title": "뽀로로 응가 사운드북: 나타났다 뿌직 똥",
+          "price": "11,200"
+        },
+        {
+          "link": "#books",
+          "img": "bookspe2.jpg",
+          "alt": "bookspe",
+          "title": "흔한남매 유튜브 연습장",
+          "price": "4,000"
+        },
+        {
+          "link": "#books",
+          "img": "bookspe3.jpg",
+          "alt": "bookspe",
+          "title": "덧셈부터 나눗셈까지 쉽게 배울 수 있는 셈이 술술 주산셈 실전설",
+          "price": "6,500"
+        },
+        {
+          "link": "#books",
+          "img": "bookspe4.jpg",
+          "alt": "bookspe",
+          "title": "뽀로로 바나나차차 율동 사운드북",
+          "price": "11,200"
+        },
+        {
+          "link": "#books",
+          "img": "bookspe5.jpg",
+          "alt": "bookspe",
+          "title": "콩순이 첫 낱말 카드 120",
+          "price": "9,000"
+        },
+        {
+          "link": "#books",
+          "img": "bookspe6.jpg",
+          "alt": "bookspe",
+          "title": "오려도 오려도 끝판왕 진짜! 마트 오리기",
+          "price": "12,400"
+        }
+      ]
+    }
+  ]
+}

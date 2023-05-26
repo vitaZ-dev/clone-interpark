@@ -1,0 +1,57 @@
+{
+  "tour_total": 6,
+  "tour_1": {
+    "link": "#",
+    "pic": "tour_package1.jpg",
+    "alt": "toru",
+    "category": "",
+    "title": "",
+    "place": "미동부캐나다 5대특식_에어프레미아 7박10일",
+    "price": "3,290,000"
+  },
+  "tour_2": {
+    "link": "#",
+    "pic": "tour_package2.jpg",
+    "alt": "toru",
+    "category": "",
+    "title": "",
+    "place": "[칸쿤/리비에라마야] 스칼렛아르떼 5박 7일 - 항공 추가가능",
+    "price": "2,280,000"
+  },
+  "tour_3": {
+    "link": "#",
+    "pic": "tour_package3.jpg",
+    "alt": "toru",
+    "category": "",
+    "title": "",
+    "place": "[제주->김포] 대한항공 편도 할인항공권",
+    "price": "48,900"
+  },
+  "tour_4": {
+    "link": "#",
+    "pic": "tour_package4.jpg",
+    "alt": "toru",
+    "category": "",
+    "title": "",
+    "place": "[버스]천국의 섬 외도+통영 2일",
+    "price": "154,000"
+  },
+  "tour_5": {
+    "link": "#",
+    "pic": "tour_package5.jpg",
+    "alt": "toru",
+    "category": "",
+    "title": "",
+    "place": "[기차] 해운대해변열차+요트투어+태종대",
+    "price": "279,000"
+  },
+  "tour_6": {
+    "link": "#",
+    "pic": "tour_package6.jpg",
+    "alt": "toru",
+    "category": "",
+    "title": "",
+    "place": "[크로아티아+동유럽 5국9일]국적기 직항+전일정 4성호텔",
+    "price": "2,899,000"
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "good_count": 6,
+  "good_1": {
+    "pic": "1.jpeg",
+    "price": "30470",
+    "link": "http://shopping.interpark.com/product/productInfo.do?prdNo=11410274830",
+    "product": "나이키 드라이 핏 헤리티지 러닝 티셔츠 FD0125-100",
+    "ratio": "20"
+  },
+  "good_2": {
+    "pic": "2.jpeg",
+    "price": "33990",
+    "link": "http://shopping.interpark.com/product/productInfo.do?prdNo=11151267206",
+    "product": "크록스 공용 CROCBAND 7종 택1(23SUCL11016)",
+    "ratio": "47"
+  },
+  "good_3": {
+    "pic": "3.jpeg",
+    "price": "7310",
+    "link": "http://shopping.interpark.com/product/productInfo.do?prdNo=11407859415",
+    "product": "[하바이아나스] 남녀공용 플립플랍 26종 택 1",
+    "ratio": "17"
+  },
+  "good_4": {
+    "pic": "4.jpeg",
+    "price": "18620",
+    "link": "http://shopping.interpark.com/product/productInfo.do?prdNo=11023730405",
+    "product": "BFL 2종세트 쿨이너티셔츠+밴딩바지세트 S23T502580M",
+    "ratio": "14"
+  },
+  "good_5": {
+    "pic": "5.jpeg",
+    "price": "13180",
+    "link": "http://shopping.interpark.com/product/productInfo.do?prdNo=7886544526",
+    "product": "[정품] 아디다스 스쿼드라 21 쇼트 (GN5776)",
+    "ratio": "14"
+  },
+  "good_6": {
+    "pic": "6.jpeg",
+    "price": "122400",
+    "link": "http://shopping.interpark.com/product/productInfo.do?prdNo=11393223830",
+    "product": "[FITFLOP] 핏플랍 그라시에샌들/플랫슈즈 外 5종 모음",
+    "ratio": "15"
+  }
+}

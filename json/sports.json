@@ -1,0 +1,51 @@
+{
+  "ticket_count": 6,
+  "ticket_1": {
+    "link": "#",
+    "pic": "doosan.gif",
+    "rank": "1",
+    "title": "두산 vs SSG (5.28)",
+    "hall": "잠실야구장",
+    "date": "2023.05.28 - 2023.05.28"
+  },
+  "ticket_2": {
+    "link": "#",
+    "pic": "doosan.gif",
+    "rank": "2",
+    "title": "두산 vs SSG (5.28)",
+    "hall": "잠실야구장",
+    "date": "2023.05.28 - 2023.05.28"
+  },
+  "ticket_3": {
+    "link": "#",
+    "pic": "doosan.gif",
+    "rank": "3",
+    "title": "두산 vs SSG (5.27)",
+    "hall": "잠실야구장",
+    "date": "2023.05.27 ~ 2023.05.27"
+  },
+  "ticket_4": {
+    "link": "#",
+    "pic": "kiwoom.gif",
+    "rank": "4",
+    "title": "키움 vs 롯데 (5.28)",
+    "hall": "고척스카이돔",
+    "date": "2023.05.28 ~ 2023.05.28"
+  },
+  "ticket_5": {
+    "link": "#",
+    "pic": "kiwoom.gif",
+    "rank": "5",
+    "title": "키움 vs 롯데 (5.27)",
+    "hall": "고척스카이돔",
+    "date": "2023.05.27 - 2023.05.27"
+  },
+  "ticket_6": {
+    "link": "#",
+    "pic": "doosan.gif",
+    "rank": "6",
+    "title": "두산 vs 삼성 (5.24)",
+    "hall": "잠실야구장",
+    "date": "2023.05.24 - 2023.05.24"
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "good_count": 6,
+  "good_1": {
+    "link": "#",
+    "pic": "ssendil1.jpg",
+    "product": "제라 라곰 폴딩 캠핑체어 캠핑의자 옥스포드 원단",
+    "ratio": 20,
+    "price": "19,900"
+  },
+  "good_2": {
+    "link": "#",
+    "pic": "ssendil2.jpg",
+    "product": "켈로그 프링글스 슈퍼핫 할라피뇨파퍼 110g 4개+4개 초특가/감자칩/간식/스낵/포카칩/감자/과자/감자스낵",
+    "ratio": 63,
+    "price": "9,800"
+  },
+  "good_3": {
+    "link": "#",
+    "pic": "ssendil3.jpg",
+    "product": "엡손 L3256 무한잉크 무선 복합기 프린터 잉크포함",
+    "ratio": 3,
+    "price": "169,000"
+  },
+  "good_4": {
+    "link": "#",
+    "pic": "ssendil4.jpg",
+    "product": "[앱1천+출국전뷰티30%] 헤드앤숄더 가려운두피/쿨멘솔 샴푸 외 850ml 3개 + 미니샴푸 1개증정",
+    "ratio": 30,
+    "price": "21,980"
+  },
+  "good_5": {
+    "link": "#",
+    "pic": "ssendil5.jpg",
+    "product": "씨그램 라벨프리 450ml 20입(레몬/라임/플레인/피치)",
+    "ratio": 22,
+    "price": "11,020"
+  },
+  "good_6": {
+    "link": "#",
+    "pic": "ssendil6.jpg",
+    "product": "이블랑 시어서커/인견100%/피그먼트 여름침구!",
+    "ratio": 28,
+    "price": "8,900"
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "ticket_count": 6,
+  "ticket_1": {
+    "link": "#exhibition",
+    "pic": "exhibition01.gif",
+    "alt": "전시행사1",
+    "rank": "1",
+    "title": "에드워드 호퍼: 길 위에서",
+    "hall": "서울시립미술관 서소문본관 전 층",
+    "date": "2023.04.20 - 2023.08.20",
+    "sale": ""
+  },
+  "ticket_2": {
+    "link": "#exhibition",
+    "pic": "exhibition02.gif",
+    "alt": "전시행사2",
+    "rank": "2",
+    "title": "［얼리버드］ 백희나 그림책전",
+    "hall": "예술의전당 한가람디자인미술관",
+    "date": "2023.06.22 - 2023.07.30",
+    "sale": "단독판매"
+  },
+  "ticket_3": {
+    "link": "#exhibition",
+    "pic": "exhibition03.gif",
+    "alt": "전시행사3",
+    "rank": "3",
+    "title": "［HYBE INSIGHT］The Daydream Believers : 꿈, 마침내",
+    "hall": "리드빌딩",
+    "date": "2023.06.09 - 2023.08.27",
+    "sale": ""
+  },
+  "ticket_4": {
+    "link": "#exhibition",
+    "pic": "exhibition04.gif",
+    "alt": "전시행사4",
+    "rank": "4",
+    "title": "거장의 시선, 사람을 향하다 - 영국 내셔널갤러리 명화전",
+    "hall": "국립중앙박물관 기획전시실",
+    "date": "2023.06.02 - 2023.10.09",
+    "sale": ""
+  },
+  "ticket_5": {
+    "link": "#exhibition",
+    "pic": "exhibition05.gif",
+    "alt": "전시행사5",
+    "rank": "5",
+    "title": "(순천)박람회 입장권-보통권(일반)/단체권(20인이상)",
+    "hall": "2023 순천만국제정원박람회",
+    "date": "2023.04.01 - 2023.10.31",
+    "sale": "단독판매"
+  },
+  "ticket_6": {
+    "link": "#exhibition",
+    "pic": "exhibition06.gif",
+    "alt": "전시행사6",
+    "rank": "6",
+    "title": "［얼리버드］문도 멘도: 판타스틱 시티 라이프",
+    "hall": "그라운드시소 서촌",
+    "date": "2023.06.30 - 2023.12.03",
+    "sale": ""
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "tour_total": 6,
+  "tour_1": {
+    "link": "#",
+    "pic": "tour_krhotel1.jpg",
+    "alt": "tour",
+    "category": "",
+    "title": "",
+    "place": "롯데리조트 속초",
+    "price": "293,110"
+  },
+  "tour_2": {
+    "link": "#",
+    "pic": "tour_krhotel2.jpg",
+    "alt": "tour",
+    "category": "",
+    "title": "",
+    "place": "소노벨 비발디 파크 B, C",
+    "price": "121,000"
+  },
+  "tour_3": {
+    "link": "#",
+    "pic": "tour_krhotel3.jpg",
+    "alt": "tour",
+    "category": "",
+    "title": "",
+    "place": "신라스테이 해운대",
+    "price": "198,000"
+  },
+  "tour_4": {
+    "link": "#",
+    "pic": "tour_krhotel4.png",
+    "alt": "tour",
+    "category": "",
+    "title": "",
+    "place": "롯데 시티호텔 제주",
+    "price": "148,390"
+  },
+  "tour_5": {
+    "link": "#",
+    "pic": "tour_krhotel5.jpg",
+    "alt": "tour",
+    "category": "",
+    "title": "",
+    "place": "이비스 앰배서더 인사동",
+    "price": "121,000"
+  },
+  "tour_6": {
+    "link": "#",
+    "pic": "tour_krhotel6.jpg",
+    "alt": "tour",
+    "category": "",
+    "title": "",
+    "place": "코랄로 바이 조선",
+    "price": "264,870"
+  }
+}

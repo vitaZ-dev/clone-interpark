@@ -1,0 +1,45 @@
+{
+  "good_count": 6,
+  "good_1": {
+    "link": "#",
+    "pic": "mhappy1.jpg",
+    "product": "[다운로드쿠폰] 질레트 프로글라이드젤 퓨어 스포츠 170g 2개",
+    "ratio": 28,
+    "price": "8,900"
+  },
+  "good_2": {
+    "link": "#",
+    "pic": "mhappy2.jpg",
+    "product": "[공식] 이지드롭 변기크리너 블루핸들1개+리필1팩 外",
+    "ratio": 20,
+    "price": "7,080"
+  },
+  "good_3": {
+    "link": "#",
+    "pic": "mhappy3.jpg",
+    "product": "홈키파 수성 에어졸 500ml x3개",
+    "ratio": 38,
+    "price": "6,980"
+  },
+  "good_4": {
+    "link": "#",
+    "pic": "mhappy4.jpg",
+    "product": "이블랑 시어서커/인견100%/피그먼트 여름 침구!",
+    "ratio": 28,
+    "price": "8,900"
+  },
+  "good_5": {
+    "link": "#",
+    "pic": "mhappy5.jpg",
+    "product": "[가정의 달 특가] 휴럼 요거베리 플레인 요거트 스타터 2gx10포 3박스",
+    "ratio": 39,
+    "price": "18,510"
+  },
+  "good_6": {
+    "link": "#",
+    "pic": "mhappy6.jpg",
+    "product": "매직캔 이지캔 호환 그린리필 280 250 220 녹색",
+    "ratio": 12,
+    "price": "9,000"
+  }
+}

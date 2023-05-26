@@ -1,0 +1,63 @@
+{
+  "ticket_count": 6,
+  "ticket_1": {
+    "link": "#",
+    "pic": "ticket_3-1.gif",
+    "alt": "ticket",
+    "rank": "1",
+    "title": "대학로 1위 연극 〈쉬어매드니스〉",
+    "hall": "콘텐츠박스(KONTENTZ BOX)",
+    "date": "2015.11.12 - 2023.06.30",
+    "sale": "단독판매"
+  },
+  "ticket_2": {
+    "link": "#",
+    "pic": "ticket_3-2.gif",
+    "alt": "ticket",
+    "rank": "2",
+    "title": "연극 〈2시 22분 - A GHOST STORY〉",
+    "hall": "세종문화회관 M씨어터",
+    "date": "2023.07.19 - 2023.09.02",
+    "sale": "단독판매"
+  },
+  "ticket_3": {
+    "link": "#",
+    "pic": "ticket_3-3.gif",
+    "alt": "ticket",
+    "rank": "3",
+    "title": "연극 〈세일즈맨의 죽음〉",
+    "hall": "국립극장 달오름극장",
+    "date": "2023.05.21 - 2023.06.07",
+    "sale": "단독판매"
+  },
+  "ticket_4": {
+    "link": "#",
+    "pic": "ticket_3-4.gif",
+    "alt": "ticket",
+    "rank": "4",
+    "title": "음악극 〈百人堂 태영〉",
+    "hall": "우란2경",
+    "date": "2023.05.19 - 2023.06.18",
+    "sale": "단독판매"
+  },
+  "ticket_5": {
+    "link": "#",
+    "pic": "ticket_3-5.gif",
+    "alt": "ticket",
+    "rank": "5",
+    "title": "연극 ＇스크루테이프＇",
+    "hall": "LG아트센터 서울 U+ 스테이지",
+    "date": "2023.04.29 - 2023.06.10",
+    "sale": "단독판매"
+  },
+  "ticket_6": {
+    "link": "#",
+    "pic": "ticket_3-6.gif",
+    "alt": "ticket",
+    "rank": "6",
+    "title": "연극 〈바니타스〉",
+    "hall": "스튜디오블루",
+    "date": "2023.05.20 - 2023.06.25",
+    "sale": "단독판매"
+  }
+}

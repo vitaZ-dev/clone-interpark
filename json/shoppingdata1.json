@@ -1,0 +1,45 @@
+{
+  "good_count": 6,
+  "good_1": {
+    "link": "#",
+    "pic": "shopping_best_1.jpg",
+    "product": "하남쭈꾸미 350g, 500g / 3팩, 5팩 골라담기",
+    "ratio": "",
+    "price": "29,700"
+  },
+  "good_2": {
+    "link": "#",
+    "pic": "shopping_best_2.png",
+    "product": "배상면주가 느린마을막걸리 750ml x 5입",
+    "ratio": 11,
+    "price": "14,900"
+  },
+  "good_3": {
+    "link": "#",
+    "pic": "shopping_best_3.jpg",
+    "product": "제주 삼다수 무라벨 2L 6병 (유/무라벨 랜덤발송)",
+    "ratio": 8,
+    "price": "6,420"
+  },
+  "good_4": {
+    "link": "#",
+    "pic": "shopping_best_4.jpg",
+    "product": "[설빙] 인절미설빙",
+    "ratio": "",
+    "price": "8,900"
+  },
+  "good_5": {
+    "link": "#",
+    "pic": "shopping_best_5.jpg",
+    "product": "[빠른예약/다운쿠폰] 워터클린 에어컨 청소 [구매 후 예약 필수] 얼리버드 특가",
+    "ratio": 23,
+    "price": "49,890"
+  },
+  "good_6": {
+    "link": "#",
+    "pic": "shopping_best_6.jpg",
+    "product": "[경기맛기행]  푸드조아 22년산 특등급 아산 삼광쌀 10kg",
+    "ratio": "",
+    "price": "30,810"
+  }
+}

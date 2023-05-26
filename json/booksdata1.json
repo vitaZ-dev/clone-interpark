@@ -1,0 +1,38 @@
+{
+  "book_total": 5,
+  "book_1": {
+    "link": "#book",
+    "pic": "book1.jpg",
+    "alt": "book1",
+    "title": "New 대한민국 청약지도",
+    "price": "18,000"
+  },
+  "book_2": {
+    "link": "#book",
+    "pic": "book2.jpg",
+    "alt": "book2",
+    "title": "고래",
+    "price": "13,500"
+  },
+  "book_3": {
+    "link": "#book",
+    "pic": "book3.jpg",
+    "alt": "book3",
+    "title": "굿바이 코드네임",
+    "price": "13,500"
+  },
+  "book_4": {
+    "link": "#book",
+    "pic": "book4.jpg",
+    "alt": "book4",
+    "title": "나의 봄날인 너에게",
+    "price": "18,000"
+  },
+  "book_5": {
+    "link": "#book",
+    "pic": "book5.jpg",
+    "alt": "book5",
+    "title": "그냥 밥 먹자는 말이 아니었을지도 몰라",
+    "price": "18,000"
+  }
+}

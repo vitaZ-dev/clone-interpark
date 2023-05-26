@@ -1,0 +1,63 @@
+{
+  "ticket_count": 6,
+  "ticket_1": {
+    "link": "#",
+    "pic": "book_leisure1.gif",
+    "alt": "티켓",
+    "rank": "1",
+    "title": "평택 진위천유원지 캠핑장",
+    "hall": "진위천유원지",
+    "date": "2021.11.01 ~2023.06.30",
+    "sale": "단독판매"
+  },
+  "ticket_2": {
+    "link": "#",
+    "pic": "book_leisure2.gif",
+    "alt": "티켓",
+    "rank": "2",
+    "title": "평택 소풍 정원 캠핑장 이용권",
+    "hall": "평택 소풍정원 캠핑장",
+    "date": "2021.02.23 ~2023.06.30",
+    "sale": "단독판매"
+  },
+  "ticket_3": {
+    "link": "#",
+    "pic": "book_leisure3.gif",
+    "alt": "티켓",
+    "rank": "3",
+    "title": "평택 내리캠핑장",
+    "hall": "평택 내리캠핑장",
+    "date": "2020.05.01 ~2023.06.30",
+    "sale": "단독판매"
+  },
+  "ticket_4": {
+    "link": "#",
+    "pic": "book_leisure4.gif",
+    "alt": "티켓",
+    "rank": "4",
+    "title": "2023 시흥갯골캠핑장",
+    "hall": "갯골캠핑장",
+    "date": "2023.03.01 ~2023.06.30",
+    "sale": ""
+  },
+  "ticket_5": {
+    "link": "#",
+    "pic": "book_leisure5.gif",
+    "alt": "티켓",
+    "rank": "5",
+    "title": "인천대공원 캠핑장(너나들이 캠핑장)",
+    "hall": "인천대공원캠핑장",
+    "date": "2021.02.26 ~2023.07.31",
+    "sale": "단독판매"
+  },
+  "ticket_6": {
+    "link": "#",
+    "pic": "book_leisure6.gif",
+    "alt": "티켓",
+    "rank": "6",
+    "title": "자라섬캠핑장",
+    "hall": "자라섬캠핑장",
+    "date": "2021.08.01 ~2023.06.30",
+    "sale": "단독판매"
+  }
+}
