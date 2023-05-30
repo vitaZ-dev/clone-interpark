@@ -1,17 +1,19 @@
 window.addEventListener("load", function () {
-  // 선택된 출력 리스트 인덱스
-  let showIndex = 0;
-  let xhr = new XMLHttpRequest();
-  xhr.onreadystatechange = function (event) {
-    let req = event.target;
-    if (req.readyState === XMLHttpRequest.DONE) {
-      let data = JSON.parse(req.response);
-      parseBooks(data);
-    }
-  };
-  xhr.open("GET", "/json/books.json");
-  xhr.send();
+  // let xhr = new XMLHttpRequest();
+  // xhr.onreadystatechange = function (event) {
+  //   let req = event.target;
+  //   if (req.readyState === XMLHttpRequest.DONE) {
+  //     let data = JSON.parse(req.response);
+  //     parseBooks(data);
+  //   }
+  // };
+  // xhr.open("GET", "/json/books.json");
+  // xhr.send();
 
+  fetch("/json/books.json")
+    .then((res) => res.json())
+    .then((result) => parseBooks(result))
+    .catch((err) => console.error(err));
   // json data 보관
   let jsonData;
   // 버튼들
@@ -35,7 +37,7 @@ window.addEventListener("load", function () {
         aTags.forEach((item) => {
           item.classList.remove("btns-active");
         });
-        this.classList.add("btns-active");
+        aTags[i].classList.add("btns-active");
       };
     }
     // 포커스 적용

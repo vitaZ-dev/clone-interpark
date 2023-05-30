@@ -8,41 +8,53 @@
 window.addEventListener("load", function () {
   // 메뉴 실행 시(메뉴버튼 클릭 시) 쇼핑 목록 slide 내용 변경
   function parseShopping(_menu) {
-    let xhr = new XMLHttpRequest();
-    xhr.onreadystatechange = function (event) {
-      let req = event.target;
-      if (req.readyState === XMLHttpRequest.DONE) {
-        let data = JSON.parse(req.response);
-        makeShoppingSlide(data);
-      }
-    };
+    // let xhr = new XMLHttpRequest();
+    // xhr.onreadystatechange = function (event) {
+    //   let req = event.target;
+    //   if (req.readyState === XMLHttpRequest.DONE) {
+    //     let data = JSON.parse(req.response);
+    //     makeShoppingSlide(data);
+    //   }
+    // };
 
-    // 전달된 매개변수 _menu 에 따라
-    // 관련된 json 데이터 불러들이고,
     switch (_menu) {
       case "쎈딜":
-        xhr.open("GET", "/json/shoppingdata.json");
+        fetch("/json/shoppingdata.json")
+          .then((res) => {
+            return res.json();
+          })
+          .then((result) => {
+            makeShoppingSlide(result);
+          })
+          .catch((err) => console.error(err));
         break;
       case "베스트":
-        xhr.open("GET", "/json/shoppingdata1.json");
+        fetch("/json/shoppingdata1.json")
+          .then((res) => {
+            return res.json();
+          })
+          .then((result) => {
+            makeShoppingSlide(result);
+          })
+          .catch((err) => console.error(err));
         break;
       case "오늘만특가":
-        xhr.open("GET", "/json/shoppingdata2.json");
+        fetch("../json/shoppingdata2.json")
+          .then((res) => res.json())
+          .then((result) => makeShoppingSlide(result))
+          .catch((err) => console.error(err));
         break;
       case "어린이날":
-        xhr.open("GET", "/json/어린이날.json");
+        fetch("../json/어린이날.json")
+          .then((res) => res.json())
+          .then((result) => makeShoppingSlide(result))
+          .catch((err) => console.error(err));
         break;
-      /*	
-      case "소담상회":
-        xhr.open("GET", "../json/shoppingdata4.json");
-        break;
-			*/
 
       default:
         break;
     }
-    xhr.send();
-    // html을 만들어 slide 를 만들어준다.
+    //xhr.send();
   }
   parseShopping("쎈딜");
 

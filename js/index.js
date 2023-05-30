@@ -94,18 +94,23 @@ window.onload = function () {
   }
 
   /* event */
-  let eventData;
-  const eventXhttp = new XMLHttpRequest();
-  eventXhttp.onreadystatechange = function (event) {
-    let req = event.target;
-    if (req.readyState === XMLHttpRequest.DONE) {
-      eventData = JSON.parse(req.response);
-      makeEventSlide();
-    }
-  };
-  eventXhttp.open("GET", "/json/eventdata.json");
-  eventXhttp.send();
-  function makeEventSlide() {
+  // let eventData;
+  // const eventXhttp = new XMLHttpRequest();
+  // eventXhttp.onreadystatechange = function (event) {
+  //   let req = event.target;
+  //   if (req.readyState === XMLHttpRequest.DONE) {
+  //     eventData = JSON.parse(req.response);
+  //     makeEventSlide();
+  //   }
+  // };
+  // eventXhttp.open("GET", "/json/eventdata.json");
+  // eventXhttp.send();
+  fetch("/json/eventdata.json")
+    .then((res) => res.json())
+    .then((result) => makeEventSlide(result))
+    .catch((err) => console.error(err));
+
+  function makeEventSlide(eventData) {
     let swEventHtml = ``;
     for (let i = 0; i < eventData.event_total; i++) {
       let obj = eventData[`event_${i + 1}`];

@@ -1,21 +1,27 @@
-/* live */
-let liveData;
-const liveXhttp = new XMLHttpRequest();
-liveXhttp.onreadystatechange = function (event) {
-  let req = event.target;
-  if (req.readyState === XMLHttpRequest.DONE) {
-    liveData = JSON.parse(req.response);
-    makeLiveSlide();
-  }
-};
-// liveXhttp.open("GET", "../json/livedata.json");
-liveXhttp.open("GET", "/json/livedatas.json");
-liveXhttp.send();
-function makeLiveSlide() {
-  let swLiveHtml = ``;
-  for (let i = 0; i < liveData.live_total; i++) {
-    let obj = liveData[`live_${i + 1}`];
-    let temp = `
+window.addEventListener("load", function () {
+  /* live */
+  // let liveData;
+  // const liveXhttp = new XMLHttpRequest();
+  // liveXhttp.onreadystatechange = function (event) {
+  //   let req = event.target;
+  //   if (req.readyState === XMLHttpRequest.DONE) {
+  //     liveData = JSON.parse(req.response);
+  //     makeLiveSlide();
+  //   }
+  // };
+  // liveXhttp.open("GET", "../json/livedata.json");
+  // liveXhttp.open("GET", "/json/livedatas.json");
+  // liveXhttp.send();
+  fetch("/json/livedatas.json")
+    .then((res) => res.json())
+    .then((result) => makeLiveSlide(result))
+    .catch((err) => console.error(err));
+
+  function makeLiveSlide(liveData) {
+    let swLiveHtml = ``;
+    for (let i = 0; i < liveData.live_total; i++) {
+      let obj = liveData[`live_${i + 1}`];
+      let temp = `
 			<div class="swiper-slide">
 				<a href="${obj.link}" class="live-link">
 					<div class="live-img">
@@ -45,27 +51,28 @@ function makeLiveSlide() {
 				</a>
 			</div>
 			`;
-    swLiveHtml += temp;
+      swLiveHtml += temp;
+    }
+    let swLiveWrapper = document.querySelector(".sw-live .swiper-wrapper");
+    swLiveWrapper.innerHTML = swLiveHtml;
+    // swiper
+    let liveSwiper = new Swiper(".sw-live", {
+      navigation: {
+        nextEl: ".live .sw-next",
+        prevEl: ".live .sw-prev",
+      },
+      slidesPerView: 4,
+      spaceBetween: 10,
+      breakpoints: {
+        1024: {
+          slidesPerView: 3,
+          spaceBetween: 32,
+        },
+        1280: {
+          slidesPerView: 4,
+          spaceBetween: 27,
+        },
+      },
+    });
   }
-  let swLiveWrapper = document.querySelector(".sw-live .swiper-wrapper");
-  swLiveWrapper.innerHTML = swLiveHtml;
-  // swiper
-  let liveSwiper = new Swiper(".sw-live", {
-    navigation: {
-      nextEl: ".live .sw-next",
-      prevEl: ".live .sw-prev",
-    },
-    slidesPerView: 4,
-    spaceBetween: 10,
-    breakpoints: {
-      1024: {
-        slidesPerView: 3,
-        spaceBetween: 32,
-      },
-      1280: {
-        slidesPerView: 4,
-        spaceBetween: 27,
-      },
-    },
-  });
-}
+});
