@@ -9,7 +9,7 @@ liveXhttp.onreadystatechange = function (event) {
   }
 };
 // liveXhttp.open("GET", "../json/livedata.json");
-liveXhttp.open("GET", "../json/livedatas.json");
+liveXhttp.open("GET", "/json/livedatas.json");
 liveXhttp.send();
 function makeLiveSlide() {
   let swLiveHtml = ``;

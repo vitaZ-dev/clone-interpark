@@ -15,28 +15,28 @@ window.addEventListener("load", function () {
 
     switch (_cate) {
       case "뮤지컬":
-        ticketXhttp.open("GET", "../json/ticketdata1.json");
+        ticketXhttp.open("GET", "/json/ticketdata1.json");
         break;
       case "콘서트":
-        ticketXhttp.open("GET", "../json/ticketdataconcert.json");
+        ticketXhttp.open("GET", "/json/ticketdataconcert.json");
         break;
       case "연극":
-        ticketXhttp.open("GET", "../json/ticketdata2.json");
+        ticketXhttp.open("GET", "/json/ticketdata2.json");
         break;
       case "클래식/무용":
-        ticketXhttp.open("GET", "../json/ticketdata3.json");
+        ticketXhttp.open("GET", "/json/ticketdata3.json");
         break;
       case "스포츠":
-        ticketXhttp.open("GET", "../json/sports.json");
+        ticketXhttp.open("GET", "/json/sports.json");
         break;
       case "레저/캠핑":
-        ticketXhttp.open("GET", "../json/ticketdata5.json");
+        ticketXhttp.open("GET", "/json/ticketdata5.json");
         break;
       case "전시/행사":
-        ticketXhttp.open("GET", "../json/ticketexhibition.json");
+        ticketXhttp.open("GET", "/json/ticketexhibition.json");
         break;
       case "아동/가족":
-        ticketXhttp.open("GET", "../json/ticketdata7.json");
+        ticketXhttp.open("GET", "/json/ticketdata7.json");
         break;
       default:
         break;

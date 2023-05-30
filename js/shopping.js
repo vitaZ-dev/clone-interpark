@@ -21,16 +21,16 @@ window.addEventListener("load", function () {
     // 관련된 json 데이터 불러들이고,
     switch (_menu) {
       case "쎈딜":
-        xhr.open("GET", "../json/shoppingdata.json");
+        xhr.open("GET", "/json/shoppingdata.json");
         break;
       case "베스트":
-        xhr.open("GET", "../json/shoppingdata1.json");
+        xhr.open("GET", "/json/shoppingdata1.json");
         break;
       case "오늘만특가":
-        xhr.open("GET", "../json/shoppingdata2.json");
+        xhr.open("GET", "/json/shoppingdata2.json");
         break;
       case "어린이날":
-        xhr.open("GET", "../json/어린이날.json");
+        xhr.open("GET", "/json/어린이날.json");
         break;
       /*	
       case "소담상회":

@@ -9,7 +9,7 @@ window.addEventListener("load", function () {
       parseBooks(data);
     }
   };
-  xhr.open("GET", "../json/books.json");
+  xhr.open("GET", "/json/books.json");
   xhr.send();
 
   // json data 보관

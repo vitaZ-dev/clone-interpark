@@ -15,13 +15,13 @@ window.addEventListener("load", function () {
     };
 
     if (_cate === "망설이면 품절") {
-      tourXhttp.open("GET", "../json/tourdataJS.json");
+      tourXhttp.open("GET", "/json/tourdataJS.json");
     } else if (_cate === "패키지") {
-      tourXhttp.open("GET", "../json/tourdata1.json");
+      tourXhttp.open("GET", "/json/tourdata1.json");
     } else if (_cate === "국내숙소") {
-      tourXhttp.open("GET", "../json/tourdata2.json");
+      tourXhttp.open("GET", "/json/tourdata2.json");
     } else if (_cate === "해외숙소") {
-      tourXhttp.open("GET", "../json/tourdata3.json");
+      tourXhttp.open("GET", "/json/tourdata3.json");
     }
     tourXhttp.send();
   }
