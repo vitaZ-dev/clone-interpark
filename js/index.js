@@ -43,7 +43,7 @@ window.onload = function () {
       makePromotionSlide();
     }
   };
-  xhttp.open("GET", "/json/prodata.json");
+  xhttp.open("GET", "~/json/prodata.json");
   xhttp.send();
 
   function makePromotionSlide() {
@@ -94,18 +94,7 @@ window.onload = function () {
   }
 
   /* event */
-  // let eventData;
-  // const eventXhttp = new XMLHttpRequest();
-  // eventXhttp.onreadystatechange = function (event) {
-  //   let req = event.target;
-  //   if (req.readyState === XMLHttpRequest.DONE) {
-  //     eventData = JSON.parse(req.response);
-  //     makeEventSlide();
-  //   }
-  // };
-  // eventXhttp.open("GET", "/json/eventdata.json");
-  // eventXhttp.send();
-  fetch("/json/eventdata.json")
+  fetch("~/json/eventdata.json")
     .then((res) => res.json())
     .then((result) => makeEventSlide(result))
     .catch((err) => console.error(err));
