@@ -43,7 +43,7 @@ window.onload = function () {
       makePromotionSlide();
     }
   };
-  xhttp.open("GET", "~/json/prodata.json");
+  xhttp.open("GET", "/json/prodata.json");
   xhttp.send();
 
   function makePromotionSlide() {
@@ -94,7 +94,7 @@ window.onload = function () {
   }
 
   /* event */
-  fetch("~/json/eventdata.json")
+  fetch("/json/eventdata.json")
     .then((res) => res.json())
     .then((result) => makeEventSlide(result))
     .catch((err) => console.error(err));
